@@ -1,0 +1,1984 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1930089A544C27C745D10B9F /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0A01C30DB7424971BCFE1EC1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				36D71C58526DC9EC5B7BF82B /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		1F0813A8741CC2E4ED13875D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8268934403074AC5A2832834 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				3F3C0BF03341408FBE929F44 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		3F9FC3B1E1DF9D808E582FBD /* distcheck */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 136CAD21D8EC4DBAB0CA468D /* Build configuration list for PBXAggregateTarget "distcheck" */;
+			buildPhases = (
+				3B987541FC06DE80E4A5F569 /* Generate CMakeFiles/distcheck */,
+			);
+			dependencies = (
+				ED51B97EA8A64C71B8AF9A09 /* PBXTargetDependency */,
+				38DB31B1939D429FB77002AC /* PBXTargetDependency */,
+			);
+			name = distcheck;
+			productName = distcheck;
+		};
+		5CD297B4CAB2383334516D18 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 710755200A304278ACAEE073 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				974753E7BB534643A3F39FED /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A81D197B5D02F988E4923AA5 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 409E47006BFC4082899B7D40 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				377242A5DED5CB935A3DCAD2 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				19F02AAF482A402786849217 /* PBXTargetDependency */,
+				800C6D6020214CAA8D5B42DF /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F5E783348C66B013FDA5BF2D /* dist */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 41EDEBBDA88145D39317533C /* Build configuration list for PBXAggregateTarget "dist" */;
+			buildPhases = (
+				8A9C9AD35ADBE62D807CB277 /* Generate CMakeFiles/dist */,
+			);
+			dependencies = (
+				2EFDF2D5E4354C77B96852A6 /* PBXTargetDependency */,
+			);
+			name = dist;
+			productName = dist;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00C325351226476D9D853401 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_algorithm_deflate.c */ = {isa = PBXBuildFile; fileRef = 4FB31B100DA8483EB09F47E3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_algorithm_deflate.c */; };
+		054A5353C0A8439A9F4757B8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_stdio.c */ = {isa = PBXBuildFile; fileRef = 775317B25DAC421D92B7F07D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_stdio.c */; };
+		094B4B8C4CBA43429A0F865E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_begin_write.c */ = {isa = PBXBuildFile; fileRef = 87DE5F8DDC674048981773D5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_begin_write.c */; };
+		0BC8BD6C069C420482EDBAE9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_memdup.c */ = {isa = PBXBuildFile; fileRef = 050B3A54364C43FD881EFCD2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_memdup.c */; };
+		0C5C4B245DA745EFB5456B3C /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_encryption.c */ = {isa = PBXBuildFile; fileRef = 862B0605B0D8417093F4E21F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_encryption.c */; };
+		0D294289C2BA415AB8B5897F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_extra_field.c */ = {isa = PBXBuildFile; fileRef = 70EC67EE7EF443DAA6D7DC51 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_extra_field.c */; };
+		0E847E4B0C4D4E149FE81471 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_io_util.c */ = {isa = PBXBuildFile; fileRef = 7442B54BE7444671B7174A03 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_io_util.c */; };
+		0F6D93BE4B1B4C7E91B4769D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_libzip_version.c */ = {isa = PBXBuildFile; fileRef = 32DF560D240D4F4D84D63E62 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_libzip_version.c */; };
+		1115916EAD174EFAB460AA88 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_read.c */ = {isa = PBXBuildFile; fileRef = 597298D8C19E4AC596DB3737 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_read.c */; };
+		121AF6364E8647839CA13026 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fdopen.c */ = {isa = PBXBuildFile; fileRef = 5678EA78D6B448A5B6367E61 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fdopen.c */; };
+		12FC62FA1944480E8D87DC2F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_window.c */ = {isa = PBXBuildFile; fileRef = 29970A5F0FD64CE18368A0A2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_window.c */; };
+		13DB56DD06C54CFDBAE5C9FC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_default_password.c */ = {isa = PBXBuildFile; fileRef = AB8EA440C0594DD1956DF9D4 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_default_password.c */; };
+		18767F45DDF445E786714B9C /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_get_file_attributes.c */ = {isa = PBXBuildFile; fileRef = D3F7DC6B6DF747809DD8E6E5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_get_file_attributes.c */; };
+		1B3AC645190546BA9FA48975 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_external_attributes.c */ = {isa = PBXBuildFile; fileRef = 11436AA7EBD944AC99D64EE7 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_external_attributes.c */; };
+		1D5D1C52AD414E81B73F7D0B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_file_comment.c */ = {isa = PBXBuildFile; fileRef = 2934CF1A11EE4B4D96962F5E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_file_comment.c */; };
+		1F2F620ECBEF4529A9802D64 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_hash.c */ = {isa = PBXBuildFile; fileRef = 34E0FE5AC7B64FE299C88F58 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_hash.c */; };
+		212FEF56EC304994ADF21670 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_strerror.c */ = {isa = PBXBuildFile; fileRef = 66BA79AD72664A368D529D52 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_strerror.c */; };
+		23573CE122634DC7A9231132 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add_dir.c */ = {isa = PBXBuildFile; fileRef = 43DAA1ABC9554A3BAED16B5B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add_dir.c */; };
+		236F268A79924F75A858383D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_tell_write.c */ = {isa = PBXBuildFile; fileRef = 6EEF936DC9494D4A928081EE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_tell_write.c */; };
+		239B3AA16FE94D19ABFD685A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_num_files.c */ = {isa = PBXBuildFile; fileRef = D6C0FE3CB6C144F49EE28445 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_num_files.c */; };
+		256FEE993C384D63A2889A7F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_data.c */ = {isa = PBXBuildFile; fileRef = 83FB1F7764CF4F31AA562335 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_data.c */; };
+		27D68B0787074EA2B8B76A14 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_extra_field_api.c */ = {isa = PBXBuildFile; fileRef = 64953F2441A64E758818D907 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_extra_field_api.c */; };
+		281D9993E11D4144AA6709D2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_comment.c */ = {isa = PBXBuildFile; fileRef = 19A8084D98414A2B9EB11298 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_comment.c */; };
+		2B984F4A38D946AB907F1619 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fseek.c */ = {isa = PBXBuildFile; fileRef = D53B30A4F0B24AAA8BDF9384 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fseek.c */; };
+		2BDC32CBB3E94AD5BFE7DBF1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_name.c */ = {isa = PBXBuildFile; fileRef = ACC547C6D5544CA29457BF83 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_name.c */; };
+		2CA1A6EBFA0B4D369AF0E87A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_random_unix.c */ = {isa = PBXBuildFile; fileRef = 138474A728BD40658F387F07 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_random_unix.c */; };
+		2E06D3D8D05D4369855534E9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_to_str.c */ = {isa = PBXBuildFile; fileRef = A54C10DB9F07451DA919C256 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_to_str.c */; };
+		2F6BAFF8ED3C4078BB39F618 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_call.c */ = {isa = PBXBuildFile; fileRef = C729A4A9C22F45489C6394F0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_call.c */; };
+		2FA946EFC0764273BE86F7C8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_tell.c */ = {isa = PBXBuildFile; fileRef = 636525AE16FF401083544672 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_tell.c */; };
+		311763B79DE84482A18E4A5D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_archive_comment.c */ = {isa = PBXBuildFile; fileRef = C0BE0F82F53F4809924DC8D5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_archive_comment.c */; };
+		3345D9C142244FB39F9F0038 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c.rule */ = {isa = PBXBuildFile; fileRef = 27360988BF16426D813B80C0 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c.rule */; };
+		36007772E79D4E5AA5BAFD51 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_pkware.c */ = {isa = PBXBuildFile; fileRef = A9950A877B074BC89D7B5A32 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_pkware.c */; };
+		3919E34A09E74EEEB9E6AF93 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_open.c */ = {isa = PBXBuildFile; fileRef = D0501EA24C9D4B3E8C47B1CB /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_open.c */; };
+		3A682060456D41FDA013FDA2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pass_to_lower_layer.c */ = {isa = PBXBuildFile; fileRef = B8F6E907F90D450DBD32F1BF /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pass_to_lower_layer.c */; };
+		417F135D8C644618B651F59E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_name_locate.c */ = {isa = PBXBuildFile; fileRef = E6F627827C4B43AEA20EAA75 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_name_locate.c */; };
+		43D5B1F503294015A0E71DED /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_commit_write.c */ = {isa = PBXBuildFile; fileRef = 06720372D61B4FFDB018A2D1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_commit_write.c */; };
+		444E75E5534B49D5B20001F4 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_add.c */ = {isa = PBXBuildFile; fileRef = 8CD0CE22F48247B09C030485 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_add.c */; };
+		460BE5F9D3DA4351B1718A37 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_buffer.c */ = {isa = PBXBuildFile; fileRef = EAE436A88B4C47669D041B5B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_buffer.c */; };
+		4866D228767B4A159DFFE80F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fread.c */ = {isa = PBXBuildFile; fileRef = 988DE40FD04F444EB19B8CBC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fread.c */; };
+		4AD9E73B00A24B6DB3794AAC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_ftell.c */ = {isa = PBXBuildFile; fileRef = 476DC90E351F4CABB07091E6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_ftell.c */; };
+		4DCF77B6B3DB4C03841FF234 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_crc.c */ = {isa = PBXBuildFile; fileRef = A29AC1BE3D9540B08BA153B2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_crc.c */; };
+		55EA1E8E6B7C4F3586791642 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_encrypted.c */ = {isa = PBXBuildFile; fileRef = CB2146977FD94540B72ABA1E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_encrypted.c */; };
+		56DBE8E7F7FB49D98BFC67E7 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_function.c */ = {isa = PBXBuildFile; fileRef = 42A3246B3829495ABA4EB7DA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_function.c */; };
+		5ABC0FA5B8BF439C9EC3A5F5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_archive_flag.c */ = {isa = PBXBuildFile; fileRef = D0CE65531FCE408BBA5ED557 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_archive_flag.c */; };
+		5AF6487A34874634B885A494 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_stat.c */ = {isa = PBXBuildFile; fileRef = D6266BDAEF7F40B1B5EF9EEB /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_stat.c */; };
+		5B689659951F41FFA6089056 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_archive_comment.c */ = {isa = PBXBuildFile; fileRef = D7FE82EBB22642C299DC348D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_archive_comment.c */; };
+		5D4496E501CE4A5DA7580606 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add_entry.c */ = {isa = PBXBuildFile; fileRef = C92D41873816499395024E88 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add_entry.c */; };
+		5EC090662804417088629AE9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_progress.c */ = {isa = PBXBuildFile; fileRef = F365B93ABEA34B77BF13E7A0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_progress.c */; };
+		5FCA7E7CB0FC430E97256DA5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_error_get.c */ = {isa = PBXBuildFile; fileRef = 40CA1BFD62044EAEAC08C595 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_error_get.c */; };
+		5FF1ADC5D7BF419D9BE9DFA6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_common.c */ = {isa = PBXBuildFile; fileRef = 3B0DCCAC6F74497D8B3935CD /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_common.c */; };
+		641C206A7BF24EEC9416E18E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_layered.c */ = {isa = PBXBuildFile; fileRef = 1916F509ADA54D15A3B92BB1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_layered.c */; };
+		68CC4CDFE1244D60A71788D6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_dirent.c */ = {isa = PBXBuildFile; fileRef = 4D4FC74F55ED4C539B6FA2FE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_dirent.c */; };
+		69062B493FE44C27BAF8EB6F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_replace.c */ = {isa = PBXBuildFile; fileRef = 415C0786A90840099C26917A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_replace.c */; };
+		6AA759EC91874B21A0DECA59 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_supports.c */ = {isa = PBXBuildFile; fileRef = 0EEE9B5A5C5D40099B1EFD2F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_supports.c */; };
+		6C9078DD6C334AF6B964C02E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_rename.c */ = {isa = PBXBuildFile; fileRef = A286A8CC6CB94B2A9CFD2CEE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_rename.c */; };
+		6CA8A94F44264F2787890FDB /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_discard.c */ = {isa = PBXBuildFile; fileRef = C13BA91ABB9C4CA3A7CA2282 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_discard.c */; };
+		6FDCC0225C9645D586156F3E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_compress.c */ = {isa = PBXBuildFile; fileRef = 222F64F16BDB40B9A896EF3F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_compress.c */; };
+		71D0AE55687F4304B5A5D357 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen.c */ = {isa = PBXBuildFile; fileRef = 87D28ED68F044355BD2E645D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen.c */; };
+		71DE9A74B3A845F685EAD84F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_comment.c */ = {isa = PBXBuildFile; fileRef = 7E13E0F21AAB4DCA87AC3FA6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_comment.c */; };
+		786B9FB3D543466EB371E240 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_rollback_write.c */ = {isa = PBXBuildFile; fileRef = B3FDE5EE5BB040C0AD0E6978 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_rollback_write.c */; };
+		8174B7F776504DC2A24A9C01 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/CMakeFiles/zip.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = E4122B1932E4450A9F37EC08 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/CMakeFiles/zip.dir/Info.plist */; };
+		81FAD10ED55645378D35C2B3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fclose.c */ = {isa = PBXBuildFile; fileRef = A56430122A5A49FF95541991 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fclose.c */; };
+		81FE22FD5D4B4A96AC2284B6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_new.c */ = {isa = PBXBuildFile; fileRef = 05FEC044A9C346FDBF72D1EA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_new.c */; };
+		8283C1EBDC5843C6A17BD722 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_strerror.c */ = {isa = PBXBuildFile; fileRef = EEE7FEC777554CBDAB63A154 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_strerror.c */; };
+		8284AA40208F4E4F83107E46 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_close.c */ = {isa = PBXBuildFile; fileRef = 01C279B8168D473F99E97D29 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_close.c */; };
+		86341A126BE342EB8961FC73 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_mtime.c */ = {isa = PBXBuildFile; fileRef = 45D74E6CDF3B429F9F8BD353 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_mtime.c */; };
+		990D131F905E4096AB9A9493 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_dir_add.c */ = {isa = PBXBuildFile; fileRef = 09FD0D13274147EFA1C07502 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_dir_add.c */; };
+		99821AD2DB7546C99D3E18A9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_archive_flag.c */ = {isa = PBXBuildFile; fileRef = 1D9A27B971F34C72858135D8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_archive_flag.c */; };
+		9A21AA7719924EE69E84F4B1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_remove.c */ = {isa = PBXBuildFile; fileRef = D2EC2D4DA74947D4971CE3D3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_remove.c */; };
+		9A61E8402A0643EC9F22E65B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange.c */ = {isa = PBXBuildFile; fileRef = 653D5076E37F47DD8437DF71 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange.c */; };
+		9B4020495C5E4D2EA27B18EA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_error_clear.c */ = {isa = PBXBuildFile; fileRef = 3375EF983758408D8F170F9B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_error_clear.c */; };
+		9C79914C04964FB18F8D61F2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_free.c */ = {isa = PBXBuildFile; fileRef = AB0B846668B44565B841ED15 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_free.c */; };
+		9EA6969DAFE947D590E20A99 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_stdio_named.c */ = {isa = PBXBuildFile; fileRef = ABD220DEF451449BAC8D439B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_stdio_named.c */; };
+		9F6308836C384A9DBBBDB74F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error.c */ = {isa = PBXBuildFile; fileRef = CBF3502B4C47432CB61FD999 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error.c */; };
+		A43785181E74414F9B5B0348 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_clear.c */ = {isa = PBXBuildFile; fileRef = 9ADBD7ECA4334085B14174D0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_clear.c */; };
+		A44BCEF5FE9646B787E1B814 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_close.c */ = {isa = PBXBuildFile; fileRef = B00883507F40487CAF406775 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_close.c */; };
+		A47F10B0DFC049E7A1F49692 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_write.c */ = {isa = PBXBuildFile; fileRef = 4BA4F708C4654346B7EF6B7F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_write.c */; };
+		A6A998640CF64AFEA206A0CC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat_init.c */ = {isa = PBXBuildFile; fileRef = FC01837DBF5C41BBA0F30C74 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat_init.c */; };
+		A73F1EB2A2D54A1F896E524F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_string.c */ = {isa = PBXBuildFile; fileRef = B46BADE55A144B078096157D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_string.c */; };
+		A7D96EADAAA043F4ABAA0519 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_get.c */ = {isa = PBXBuildFile; fileRef = F4D3BB6A14B0440BA8059A23 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_get.c */; };
+		AA2D32DE7C4E49FFBA755D8B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pkware_decode.c */ = {isa = PBXBuildFile; fileRef = 76BC9F59897648B7BDAFFA60 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pkware_decode.c */; };
+		AA5BBDD24C05424383B22432 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_seek.c */ = {isa = PBXBuildFile; fileRef = 2E25941131B2448480F60742 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_seek.c */; };
+		AD097AF991EC46B2B0381A6C /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_buffer.c */ = {isa = PBXBuildFile; fileRef = D43CD7C40D4F4B3A924D2A76 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_buffer.c */; };
+		AEEB168AFCCF4B06A1C4CFB6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_delete.c */ = {isa = PBXBuildFile; fileRef = F40458C3EE7945219A203672 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_delete.c */; };
+		AFD398F8922248EFA8ACF38E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_archive.c */ = {isa = PBXBuildFile; fileRef = 859C0BF69CFE4535AF2EB8DA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_archive.c */; };
+		B4B3CD661DAD46C2B9C861B9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_utf-8.c */ = {isa = PBXBuildFile; fileRef = FDF7E02B8498469D82E94311 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_utf-8.c */; };
+		B55E96BA48B44B1E8CFE774F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_external_attributes.c */ = {isa = PBXBuildFile; fileRef = 7F5AFCFF292544D886464052 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_external_attributes.c */; };
+		B563A78359B74D568AD0B4BE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_all.c */ = {isa = PBXBuildFile; fileRef = 63D74677F7AC4A7E8FB4DE45 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_all.c */; };
+		B8CFE4F0FF7348CDB44A3045 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_entry.c */ = {isa = PBXBuildFile; fileRef = D9A1BADCA63840268BD27929 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_entry.c */; };
+		B9443E8BDF7748ECB4635748 /* /Users/chachillie/flycast/core/deps/libzip/lib/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4C68A87B00B7416EBCBC357A /* /Users/chachillie/flycast/core/deps/libzip/lib/CMakeLists.txt */; };
+		BA78CA5BF4404BB290323D5B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_offset.c */ = {isa = PBXBuildFile; fileRef = 2D83029D3A304DEB9FFD3850 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_offset.c */; };
+		BD0B16E84C6741058847CE56 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_file_compression.c */ = {isa = PBXBuildFile; fileRef = 7E61145DA1724405A4062863 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_file_compression.c */; };
+		BF9DBE5430FB4796AF673CD2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pkware_encode.c */ = {isa = PBXBuildFile; fileRef = 59A6F7A97CB04828AD846ADF /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pkware_encode.c */; };
+		C0F82FEB49574BC09D900B76 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_open.c */ = {isa = PBXBuildFile; fileRef = B27CAD7EA430489EBD43082A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_open.c */; };
+		C24721DD4D11436EB39A121A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_zip_new.c */ = {isa = PBXBuildFile; fileRef = CDF3060432E44FF0B5E76ED5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_zip_new.c */; };
+		C318363A403C442B8AFD86E8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_encryption_implementation.c */ = {isa = PBXBuildFile; fileRef = 2F638230E09647D691CDD93E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_encryption_implementation.c */; };
+		CFB742E0E7D841669FFCF8C8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_index_encrypted.c */ = {isa = PBXBuildFile; fileRef = 1972545075B5411FB3836F9B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_index_encrypted.c */; };
+		D146C2133C0E43F3B66E7EA4 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_error.c */ = {isa = PBXBuildFile; fileRef = 673591BFC0A04DFB887D688C /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_error.c */; };
+		D2542392FCB64291B3218BA0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_get_sys_type.c */ = {isa = PBXBuildFile; fileRef = F87857BBED234625B6A41C74 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_get_sys_type.c */; };
+		D459F3D8B2A5417681742486 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add.c */ = {isa = PBXBuildFile; fileRef = A80705A1845D4B289250568E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add.c */; };
+		D7DDAA9F37A547F6AD44C687 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_begin_write_cloning.c */ = {isa = PBXBuildFile; fileRef = 065F28DB720547A9A4B9D732 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_begin_write_cloning.c */; };
+		E047ED26825D453F8EB4DECE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_index.c */ = {isa = PBXBuildFile; fileRef = C1C317E33B984E88B9E68859 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_index.c */; };
+		E181AC54E72C49EDA1D5E113 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_rename.c */ = {isa = PBXBuildFile; fileRef = D6E6B8FFEFC3431087A02DBA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_rename.c */; };
+		E2831935E44A49619E1F05BF /* /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c */ = {isa = PBXBuildFile; fileRef = B538437CA8EC4A7293AB15D8 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c */; };
+		E3F4730AF69543ACA3EEF83E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_name.c */ = {isa = PBXBuildFile; fileRef = 583633B79443498BABA4A4E5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_name.c */; };
+		E5EF93CB311D44E6B8272153 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_num_entries.c */ = {isa = PBXBuildFile; fileRef = F063CEBF2B7B416EA4CF9E3B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_num_entries.c */; };
+		E7F0DF72309D4DC68DB65EFB /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_file_comment.c */ = {isa = PBXBuildFile; fileRef = 68B24BF632DF4BD3AE659815 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_file_comment.c */; };
+		E8BFD80D3CC64959AA885855 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_zip.c */ = {isa = PBXBuildFile; fileRef = C7F4C51B96FB4380A72D0B53 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_zip.c */; };
+		EA3A97D22DFE4B069A40192D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_seek_write.c */ = {isa = PBXBuildFile; fileRef = 1D0F26BE75604043873C11E5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_seek_write.c */; };
+		EBD0143A9321402BAEA8D8F8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat_index.c */ = {isa = PBXBuildFile; fileRef = 380CBD0094D44E1BA20048EE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat_index.c */; };
+		EC2095F4C6A8455DBD1C09DF /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_strerror.c */ = {isa = PBXBuildFile; fileRef = A8A02764ED854DCEB047B77D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_strerror.c */; };
+		EE7CD4115CF14296BB4B2AE0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat.c */ = {isa = PBXBuildFile; fileRef = BF2A686A5F0A4CEAACDB005E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat.c */; };
+		F4C32EFE9E1B49498470A288 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_replace.c */ = {isa = PBXBuildFile; fileRef = 12CDC58B543346E6B38221C7 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_replace.c */; };
+		F588C966996549CB9C41ADF9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_algorithm_zstd.c */ = {isa = PBXBuildFile; fileRef = 1CB51EFE79C54EE5BB59ABB3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_algorithm_zstd.c */; };
+		F79A015B7C614DADAEC408B5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_is_deleted.c */ = {isa = PBXBuildFile; fileRef = 2FFABE2474A7481C89655C48 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_is_deleted.c */; };
+		FBCEF6CA411D44A6B7739CDC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_accept_empty.c */ = {isa = PBXBuildFile; fileRef = FECB0E855A0149F88FA93AC1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_accept_empty.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		7355E925F3D749AF8CC8F048 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		E3BA23EA6BAB4391B4BD6078 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		E917F6F28C2E426F8A7B4F9E /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		F683EB64EAA843A5AC49D868 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		193B84530B8249208C7A7492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2095E9D658B41EABA2254F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81D197B5D02F988E4923AA5;
+			remoteInfo = ALL_BUILD;
+		};
+		1F18B560FF794DBC93ABC16C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2095E9D658B41EABA2254F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1930089A544C27C745D10B9F;
+			remoteInfo = ZERO_CHECK;
+		};
+		3B9831D6B17E411FB48E10D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2095E9D658B41EABA2254F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5E783348C66B013FDA5BF2D;
+			remoteInfo = dist;
+		};
+		42F56ACDAF1543A79B2F160C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2095E9D658B41EABA2254F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AA1697EDEC0ABD31E514DBF;
+			remoteInfo = zip;
+		};
+		8078A26E401C479F92A7D493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2095E9D658B41EABA2254F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1930089A544C27C745D10B9F;
+			remoteInfo = ZERO_CHECK;
+		};
+		A66DBEC73F82412486F8C403 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2095E9D658B41EABA2254F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1930089A544C27C745D10B9F;
+			remoteInfo = ZERO_CHECK;
+		};
+		B9921F0714EE4859852AF561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2095E9D658B41EABA2254F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81D197B5D02F988E4923AA5;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C279B8168D473F99E97D29 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_close.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_close.c; path = lib/zip_close.c; sourceTree = SOURCE_ROOT; };
+		050B3A54364C43FD881EFCD2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_memdup.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_memdup.c; path = lib/zip_memdup.c; sourceTree = SOURCE_ROOT; };
+		05FEC044A9C346FDBF72D1EA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_new.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_new.c; path = lib/zip_new.c; sourceTree = SOURCE_ROOT; };
+		065F28DB720547A9A4B9D732 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_begin_write_cloning.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_begin_write_cloning.c; path = lib/zip_source_begin_write_cloning.c; sourceTree = SOURCE_ROOT; };
+		06720372D61B4FFDB018A2D1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_commit_write.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_commit_write.c; path = lib/zip_source_commit_write.c; sourceTree = SOURCE_ROOT; };
+		09FD0D13274147EFA1C07502 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_dir_add.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_dir_add.c; path = lib/zip_dir_add.c; sourceTree = SOURCE_ROOT; };
+		0EEE9B5A5C5D40099B1EFD2F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_supports.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_supports.c; path = lib/zip_source_supports.c; sourceTree = SOURCE_ROOT; };
+		11436AA7EBD944AC99D64EE7 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_external_attributes.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_get_external_attributes.c; path = lib/zip_file_get_external_attributes.c; sourceTree = SOURCE_ROOT; };
+		12CDC58B543346E6B38221C7 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_replace.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_replace.c; path = lib/zip_replace.c; sourceTree = SOURCE_ROOT; };
+		138474A728BD40658F387F07 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_random_unix.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_random_unix.c; path = lib/zip_random_unix.c; sourceTree = SOURCE_ROOT; };
+		13DC21DE3A64486DB4E180AB /* /Users/chachillie/flycast/core/deps/libzip/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1916F509ADA54D15A3B92BB1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_layered.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_layered.c; path = lib/zip_source_layered.c; sourceTree = SOURCE_ROOT; };
+		1972545075B5411FB3836F9B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_index_encrypted.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_fopen_index_encrypted.c; path = lib/zip_fopen_index_encrypted.c; sourceTree = SOURCE_ROOT; };
+		19A8084D98414A2B9EB11298 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_comment.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_set_comment.c; path = lib/zip_file_set_comment.c; sourceTree = SOURCE_ROOT; };
+		1CB51EFE79C54EE5BB59ABB3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_algorithm_zstd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_algorithm_zstd.c; path = lib/zip_algorithm_zstd.c; sourceTree = SOURCE_ROOT; };
+		1D0F26BE75604043873C11E5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_seek_write.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_seek_write.c; path = lib/zip_source_seek_write.c; sourceTree = SOURCE_ROOT; };
+		1D9A27B971F34C72858135D8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_archive_flag.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_get_archive_flag.c; path = lib/zip_get_archive_flag.c; sourceTree = SOURCE_ROOT; };
+		222F64F16BDB40B9A896EF3F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_compress.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_compress.c; path = lib/zip_source_compress.c; sourceTree = SOURCE_ROOT; };
+		27360988BF16426D813B80C0 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c.rule */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = zip_err_str.c.rule; path = /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c.rule; sourceTree = "<absolute>"; };
+		2934CF1A11EE4B4D96962F5E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_file_comment.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_get_file_comment.c; path = lib/zip_get_file_comment.c; sourceTree = SOURCE_ROOT; };
+		29970A5F0FD64CE18368A0A2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_window.c; path = lib/zip_source_window.c; sourceTree = SOURCE_ROOT; };
+		2D83029D3A304DEB9FFD3850 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_offset.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_get_offset.c; path = lib/zip_file_get_offset.c; sourceTree = SOURCE_ROOT; };
+		2E25941131B2448480F60742 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_seek.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_seek.c; path = lib/zip_source_seek.c; sourceTree = SOURCE_ROOT; };
+		2F638230E09647D691CDD93E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_encryption_implementation.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_get_encryption_implementation.c; path = lib/zip_get_encryption_implementation.c; sourceTree = SOURCE_ROOT; };
+		2FFABE2474A7481C89655C48 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_is_deleted.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_is_deleted.c; path = lib/zip_source_is_deleted.c; sourceTree = SOURCE_ROOT; };
+		32DF560D240D4F4D84D63E62 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_libzip_version.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_libzip_version.c; path = lib/zip_libzip_version.c; sourceTree = SOURCE_ROOT; };
+		3375EF983758408D8F170F9B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_error_clear.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_error_clear.c; path = lib/zip_file_error_clear.c; sourceTree = SOURCE_ROOT; };
+		34E0FE5AC7B64FE299C88F58 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_hash.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_hash.c; path = lib/zip_hash.c; sourceTree = SOURCE_ROOT; };
+		380CBD0094D44E1BA20048EE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat_index.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_stat_index.c; path = lib/zip_stat_index.c; sourceTree = SOURCE_ROOT; };
+		380F5304FE0A4D698D96894B /* /Users/chachillie/flycast/core/deps/libzip/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3B0DCCAC6F74497D8B3935CD /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_common.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_file_common.c; path = lib/zip_source_file_common.c; sourceTree = SOURCE_ROOT; };
+		40CA1BFD62044EAEAC08C595 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_error_get.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_error_get.c; path = lib/zip_file_error_get.c; sourceTree = SOURCE_ROOT; };
+		415C0786A90840099C26917A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_replace.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_replace.c; path = lib/zip_file_replace.c; sourceTree = SOURCE_ROOT; };
+		42A3246B3829495ABA4EB7DA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_function.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_function.c; path = lib/zip_source_function.c; sourceTree = SOURCE_ROOT; };
+		43DAA1ABC9554A3BAED16B5B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add_dir.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_add_dir.c; path = lib/zip_add_dir.c; sourceTree = SOURCE_ROOT; };
+		45D74E6CDF3B429F9F8BD353 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_mtime.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_set_mtime.c; path = lib/zip_file_set_mtime.c; sourceTree = SOURCE_ROOT; };
+		476DC90E351F4CABB07091E6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_ftell.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_ftell.c; path = lib/zip_ftell.c; sourceTree = SOURCE_ROOT; };
+		4BA4F708C4654346B7EF6B7F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_write.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_write.c; path = lib/zip_source_write.c; sourceTree = SOURCE_ROOT; };
+		4C68A87B00B7416EBCBC357A /* /Users/chachillie/flycast/core/deps/libzip/lib/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = lib/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4D4FC74F55ED4C539B6FA2FE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_dirent.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_dirent.c; path = lib/zip_dirent.c; sourceTree = SOURCE_ROOT; };
+		4FB31B100DA8483EB09F47E3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_algorithm_deflate.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_algorithm_deflate.c; path = lib/zip_algorithm_deflate.c; sourceTree = SOURCE_ROOT; };
+		5678EA78D6B448A5B6367E61 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fdopen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_fdopen.c; path = lib/zip_fdopen.c; sourceTree = SOURCE_ROOT; };
+		583633B79443498BABA4A4E5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_name.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_set_name.c; path = lib/zip_set_name.c; sourceTree = SOURCE_ROOT; };
+		597298D8C19E4AC596DB3737 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_read.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_read.c; path = lib/zip_source_read.c; sourceTree = SOURCE_ROOT; };
+		59A6F7A97CB04828AD846ADF /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pkware_encode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_pkware_encode.c; path = lib/zip_source_pkware_encode.c; sourceTree = SOURCE_ROOT; };
+		636525AE16FF401083544672 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_tell.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_tell.c; path = lib/zip_source_tell.c; sourceTree = SOURCE_ROOT; };
+		63D74677F7AC4A7E8FB4DE45 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_all.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_unchange_all.c; path = lib/zip_unchange_all.c; sourceTree = SOURCE_ROOT; };
+		64953F2441A64E758818D907 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_extra_field_api.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_extra_field_api.c; path = lib/zip_extra_field_api.c; sourceTree = SOURCE_ROOT; };
+		653D5076E37F47DD8437DF71 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_unchange.c; path = lib/zip_unchange.c; sourceTree = SOURCE_ROOT; };
+		66BA79AD72664A368D529D52 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_strerror.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_error_strerror.c; path = lib/zip_error_strerror.c; sourceTree = SOURCE_ROOT; };
+		673591BFC0A04DFB887D688C /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_error.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_error.c; path = lib/zip_source_error.c; sourceTree = SOURCE_ROOT; };
+		68B24BF632DF4BD3AE659815 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_file_comment.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_set_file_comment.c; path = lib/zip_set_file_comment.c; sourceTree = SOURCE_ROOT; };
+		6EEF936DC9494D4A928081EE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_tell_write.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_tell_write.c; path = lib/zip_source_tell_write.c; sourceTree = SOURCE_ROOT; };
+		70EC67EE7EF443DAA6D7DC51 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_extra_field.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_extra_field.c; path = lib/zip_extra_field.c; sourceTree = SOURCE_ROOT; };
+		7442B54BE7444671B7174A03 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_io_util.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_io_util.c; path = lib/zip_io_util.c; sourceTree = SOURCE_ROOT; };
+		76BC9F59897648B7BDAFFA60 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pkware_decode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_pkware_decode.c; path = lib/zip_source_pkware_decode.c; sourceTree = SOURCE_ROOT; };
+		775317B25DAC421D92B7F07D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_stdio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_file_stdio.c; path = lib/zip_source_file_stdio.c; sourceTree = SOURCE_ROOT; };
+		7E13E0F21AAB4DCA87AC3FA6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_comment.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_get_comment.c; path = lib/zip_file_get_comment.c; sourceTree = SOURCE_ROOT; };
+		7E61145DA1724405A4062863 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_file_compression.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_set_file_compression.c; path = lib/zip_set_file_compression.c; sourceTree = SOURCE_ROOT; };
+		7F5AFCFF292544D886464052 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_external_attributes.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_set_external_attributes.c; path = lib/zip_file_set_external_attributes.c; sourceTree = SOURCE_ROOT; };
+		83FB1F7764CF4F31AA562335 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_data.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_unchange_data.c; path = lib/zip_unchange_data.c; sourceTree = SOURCE_ROOT; };
+		859C0BF69CFE4535AF2EB8DA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_archive.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_unchange_archive.c; path = lib/zip_unchange_archive.c; sourceTree = SOURCE_ROOT; };
+		862B0605B0D8417093F4E21F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_encryption.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_set_encryption.c; path = lib/zip_file_set_encryption.c; sourceTree = SOURCE_ROOT; };
+		87D28ED68F044355BD2E645D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_fopen.c; path = lib/zip_fopen.c; sourceTree = SOURCE_ROOT; };
+		87DE5F8DDC674048981773D5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_begin_write.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_begin_write.c; path = lib/zip_source_begin_write.c; sourceTree = SOURCE_ROOT; };
+		8A3631142DDD49E9A5475A47 /* zip */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libzip.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD0CE22F48247B09C030485 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_add.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_add.c; path = lib/zip_file_add.c; sourceTree = SOURCE_ROOT; };
+		988DE40FD04F444EB19B8CBC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_fread.c; path = lib/zip_fread.c; sourceTree = SOURCE_ROOT; };
+		9AAA9A0B2E3D4D7CABA211A6 /* /Users/chachillie/flycast/core/deps/libzip/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9ADBD7ECA4334085B14174D0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_clear.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_error_clear.c; path = lib/zip_error_clear.c; sourceTree = SOURCE_ROOT; };
+		A286A8CC6CB94B2A9CFD2CEE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_rename.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_rename.c; path = lib/zip_file_rename.c; sourceTree = SOURCE_ROOT; };
+		A29AC1BE3D9540B08BA153B2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_crc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_crc.c; path = lib/zip_source_crc.c; sourceTree = SOURCE_ROOT; };
+		A54C10DB9F07451DA919C256 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_to_str.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_error_to_str.c; path = lib/zip_error_to_str.c; sourceTree = SOURCE_ROOT; };
+		A56430122A5A49FF95541991 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fclose.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_fclose.c; path = lib/zip_fclose.c; sourceTree = SOURCE_ROOT; };
+		A80705A1845D4B289250568E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_add.c; path = lib/zip_add.c; sourceTree = SOURCE_ROOT; };
+		A8A02764ED854DCEB047B77D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_strerror.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_strerror.c; path = lib/zip_strerror.c; sourceTree = SOURCE_ROOT; };
+		A9950A877B074BC89D7B5A32 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_pkware.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_pkware.c; path = lib/zip_pkware.c; sourceTree = SOURCE_ROOT; };
+		AB0B846668B44565B841ED15 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_free.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_free.c; path = lib/zip_source_free.c; sourceTree = SOURCE_ROOT; };
+		AB8EA440C0594DD1956DF9D4 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_default_password.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_set_default_password.c; path = lib/zip_set_default_password.c; sourceTree = SOURCE_ROOT; };
+		ABD220DEF451449BAC8D439B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_stdio_named.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_file_stdio_named.c; path = lib/zip_source_file_stdio_named.c; sourceTree = SOURCE_ROOT; };
+		ACC547C6D5544CA29457BF83 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_name.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_get_name.c; path = lib/zip_get_name.c; sourceTree = SOURCE_ROOT; };
+		B00883507F40487CAF406775 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_close.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_close.c; path = lib/zip_source_close.c; sourceTree = SOURCE_ROOT; };
+		B27CAD7EA430489EBD43082A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_open.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_open.c; path = lib/zip_open.c; sourceTree = SOURCE_ROOT; };
+		B3FDE5EE5BB040C0AD0E6978 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_rollback_write.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_rollback_write.c; path = lib/zip_source_rollback_write.c; sourceTree = SOURCE_ROOT; };
+		B46BADE55A144B078096157D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_string.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_string.c; path = lib/zip_string.c; sourceTree = SOURCE_ROOT; };
+		B538437CA8EC4A7293AB15D8 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_err_str.c; path = /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c; sourceTree = "<absolute>"; };
+		B8F6E907F90D450DBD32F1BF /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pass_to_lower_layer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_pass_to_lower_layer.c; path = lib/zip_source_pass_to_lower_layer.c; sourceTree = SOURCE_ROOT; };
+		BF2A686A5F0A4CEAACDB005E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_stat.c; path = lib/zip_stat.c; sourceTree = SOURCE_ROOT; };
+		C0BE0F82F53F4809924DC8D5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_archive_comment.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_get_archive_comment.c; path = lib/zip_get_archive_comment.c; sourceTree = SOURCE_ROOT; };
+		C13BA91ABB9C4CA3A7CA2282 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_discard.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_discard.c; path = lib/zip_discard.c; sourceTree = SOURCE_ROOT; };
+		C1C317E33B984E88B9E68859 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_index.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_fopen_index.c; path = lib/zip_fopen_index.c; sourceTree = SOURCE_ROOT; };
+		C729A4A9C22F45489C6394F0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_call.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_call.c; path = lib/zip_source_call.c; sourceTree = SOURCE_ROOT; };
+		C7F4C51B96FB4380A72D0B53 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_zip.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_zip.c; path = lib/zip_source_zip.c; sourceTree = SOURCE_ROOT; };
+		C92D41873816499395024E88 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add_entry.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_add_entry.c; path = lib/zip_add_entry.c; sourceTree = SOURCE_ROOT; };
+		CB2146977FD94540B72ABA1E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_encrypted.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_fopen_encrypted.c; path = lib/zip_fopen_encrypted.c; sourceTree = SOURCE_ROOT; };
+		CBF3502B4C47432CB61FD999 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_error.c; path = lib/zip_error.c; sourceTree = SOURCE_ROOT; };
+		CDF3060432E44FF0B5E76ED5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_zip_new.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_zip_new.c; path = lib/zip_source_zip_new.c; sourceTree = SOURCE_ROOT; };
+		D0501EA24C9D4B3E8C47B1CB /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_open.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_open.c; path = lib/zip_source_open.c; sourceTree = SOURCE_ROOT; };
+		D0CE65531FCE408BBA5ED557 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_archive_flag.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_set_archive_flag.c; path = lib/zip_set_archive_flag.c; sourceTree = SOURCE_ROOT; };
+		D2EC2D4DA74947D4971CE3D3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_remove.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_remove.c; path = lib/zip_source_remove.c; sourceTree = SOURCE_ROOT; };
+		D3F7DC6B6DF747809DD8E6E5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_get_file_attributes.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_get_file_attributes.c; path = lib/zip_source_get_file_attributes.c; sourceTree = SOURCE_ROOT; };
+		D43CD7C40D4F4B3A924D2A76 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_buffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_buffer.c; path = lib/zip_source_buffer.c; sourceTree = SOURCE_ROOT; };
+		D53B30A4F0B24AAA8BDF9384 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fseek.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_fseek.c; path = lib/zip_fseek.c; sourceTree = SOURCE_ROOT; };
+		D6266BDAEF7F40B1B5EF9EEB /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_stat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_stat.c; path = lib/zip_source_stat.c; sourceTree = SOURCE_ROOT; };
+		D6C0FE3CB6C144F49EE28445 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_num_files.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_get_num_files.c; path = lib/zip_get_num_files.c; sourceTree = SOURCE_ROOT; };
+		D6E6B8FFEFC3431087A02DBA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_rename.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_rename.c; path = lib/zip_rename.c; sourceTree = SOURCE_ROOT; };
+		D7FE82EBB22642C299DC348D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_archive_comment.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_set_archive_comment.c; path = lib/zip_set_archive_comment.c; sourceTree = SOURCE_ROOT; };
+		D9A1BADCA63840268BD27929 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_entry.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_entry.c; path = lib/zip_entry.c; sourceTree = SOURCE_ROOT; };
+		E4122B1932E4450A9F37EC08 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/CMakeFiles/zip.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = /Users/chachillie/flycast/build/core/deps/libzip/lib/CMakeFiles/zip.dir/Info.plist; sourceTree = "<absolute>"; };
+		E6F627827C4B43AEA20EAA75 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_name_locate.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_name_locate.c; path = lib/zip_name_locate.c; sourceTree = SOURCE_ROOT; };
+		EAE436A88B4C47669D041B5B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_buffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_buffer.c; path = lib/zip_buffer.c; sourceTree = SOURCE_ROOT; };
+		EEE7FEC777554CBDAB63A154 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_strerror.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_file_strerror.c; path = lib/zip_file_strerror.c; sourceTree = SOURCE_ROOT; };
+		F063CEBF2B7B416EA4CF9E3B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_num_entries.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_get_num_entries.c; path = lib/zip_get_num_entries.c; sourceTree = SOURCE_ROOT; };
+		F365B93ABEA34B77BF13E7A0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_progress.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_progress.c; path = lib/zip_progress.c; sourceTree = SOURCE_ROOT; };
+		F40458C3EE7945219A203672 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_delete.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_delete.c; path = lib/zip_delete.c; sourceTree = SOURCE_ROOT; };
+		F4D3BB6A14B0440BA8059A23 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_get.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_error_get.c; path = lib/zip_error_get.c; sourceTree = SOURCE_ROOT; };
+		F87857BBED234625B6A41C74 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_get_sys_type.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_error_get_sys_type.c; path = lib/zip_error_get_sys_type.c; sourceTree = SOURCE_ROOT; };
+		FC01837DBF5C41BBA0F30C74 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat_init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_stat_init.c; path = lib/zip_stat_init.c; sourceTree = SOURCE_ROOT; };
+		FDF7E02B8498469D82E94311 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_utf-8.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "zip_utf-8.c"; path = "lib/zip_utf-8.c"; sourceTree = SOURCE_ROOT; };
+		FECB0E855A0149F88FA93AC1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_accept_empty.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zip_source_accept_empty.c; path = lib/zip_source_accept_empty.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		597ACC80B91D4CEDBA989EA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C061DA11D024C479206F23E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A3631142DDD49E9A5475A47 /* zip */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23F244592A7748FABBF529DB = {
+			isa = PBXGroup;
+			children = (
+				258248F59DD9468DA9D45FB1 /* dist */,
+				344D7DCF23CE4A2DA82D217E /* distcheck */,
+				DC98E81F8AEA431BA98E00AE /* ALL_BUILD */,
+				9286525F5FF045DDB63A91C7 /* zip */,
+				1C061DA11D024C479206F23E /* Products */,
+				CEC7203028BD4330B8059701 /* Frameworks */,
+				E2471B8CB40C41E39AFEE704 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		250ACAE76CEF4C54B59EACDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E4122B1932E4450A9F37EC08 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/CMakeFiles/zip.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		258248F59DD9468DA9D45FB1 /* dist */ = {
+			isa = PBXGroup;
+			children = (
+				7BB7E6A3F82E4FEBB906FAF8 /* CMake Rules */,
+				380F5304FE0A4D698D96894B /* /Users/chachillie/flycast/core/deps/libzip/CMakeLists.txt */,
+			);
+			name = dist;
+			sourceTree = "<group>";
+		};
+		344D7DCF23CE4A2DA82D217E /* distcheck */ = {
+			isa = PBXGroup;
+			children = (
+				AD4801200E9F4730AD6413CB /* CMake Rules */,
+				9AAA9A0B2E3D4D7CABA211A6 /* /Users/chachillie/flycast/core/deps/libzip/CMakeLists.txt */,
+			);
+			name = distcheck;
+			sourceTree = "<group>";
+		};
+		7218D2C21AC24B6392BC672A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7BB7E6A3F82E4FEBB906FAF8 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8E2DDF704CD64D8893FED349 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B538437CA8EC4A7293AB15D8 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c */,
+				A80705A1845D4B289250568E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add.c */,
+				43DAA1ABC9554A3BAED16B5B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add_dir.c */,
+				C92D41873816499395024E88 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add_entry.c */,
+				4FB31B100DA8483EB09F47E3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_algorithm_deflate.c */,
+				1CB51EFE79C54EE5BB59ABB3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_algorithm_zstd.c */,
+				EAE436A88B4C47669D041B5B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_buffer.c */,
+				01C279B8168D473F99E97D29 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_close.c */,
+				F40458C3EE7945219A203672 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_delete.c */,
+				09FD0D13274147EFA1C07502 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_dir_add.c */,
+				4D4FC74F55ED4C539B6FA2FE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_dirent.c */,
+				C13BA91ABB9C4CA3A7CA2282 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_discard.c */,
+				D9A1BADCA63840268BD27929 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_entry.c */,
+				CBF3502B4C47432CB61FD999 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error.c */,
+				9ADBD7ECA4334085B14174D0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_clear.c */,
+				F4D3BB6A14B0440BA8059A23 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_get.c */,
+				F87857BBED234625B6A41C74 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_get_sys_type.c */,
+				66BA79AD72664A368D529D52 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_strerror.c */,
+				A54C10DB9F07451DA919C256 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_to_str.c */,
+				70EC67EE7EF443DAA6D7DC51 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_extra_field.c */,
+				64953F2441A64E758818D907 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_extra_field_api.c */,
+				A56430122A5A49FF95541991 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fclose.c */,
+				5678EA78D6B448A5B6367E61 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fdopen.c */,
+				8CD0CE22F48247B09C030485 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_add.c */,
+				3375EF983758408D8F170F9B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_error_clear.c */,
+				40CA1BFD62044EAEAC08C595 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_error_get.c */,
+				7E13E0F21AAB4DCA87AC3FA6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_comment.c */,
+				11436AA7EBD944AC99D64EE7 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_external_attributes.c */,
+				2D83029D3A304DEB9FFD3850 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_offset.c */,
+				A286A8CC6CB94B2A9CFD2CEE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_rename.c */,
+				415C0786A90840099C26917A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_replace.c */,
+				19A8084D98414A2B9EB11298 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_comment.c */,
+				862B0605B0D8417093F4E21F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_encryption.c */,
+				7F5AFCFF292544D886464052 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_external_attributes.c */,
+				45D74E6CDF3B429F9F8BD353 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_mtime.c */,
+				EEE7FEC777554CBDAB63A154 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_strerror.c */,
+				87D28ED68F044355BD2E645D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen.c */,
+				CB2146977FD94540B72ABA1E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_encrypted.c */,
+				C1C317E33B984E88B9E68859 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_index.c */,
+				1972545075B5411FB3836F9B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_index_encrypted.c */,
+				988DE40FD04F444EB19B8CBC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fread.c */,
+				D53B30A4F0B24AAA8BDF9384 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fseek.c */,
+				476DC90E351F4CABB07091E6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_ftell.c */,
+				C0BE0F82F53F4809924DC8D5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_archive_comment.c */,
+				1D9A27B971F34C72858135D8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_archive_flag.c */,
+				2F638230E09647D691CDD93E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_encryption_implementation.c */,
+				2934CF1A11EE4B4D96962F5E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_file_comment.c */,
+				ACC547C6D5544CA29457BF83 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_name.c */,
+				F063CEBF2B7B416EA4CF9E3B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_num_entries.c */,
+				D6C0FE3CB6C144F49EE28445 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_num_files.c */,
+				34E0FE5AC7B64FE299C88F58 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_hash.c */,
+				7442B54BE7444671B7174A03 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_io_util.c */,
+				32DF560D240D4F4D84D63E62 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_libzip_version.c */,
+				050B3A54364C43FD881EFCD2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_memdup.c */,
+				E6F627827C4B43AEA20EAA75 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_name_locate.c */,
+				05FEC044A9C346FDBF72D1EA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_new.c */,
+				B27CAD7EA430489EBD43082A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_open.c */,
+				A9950A877B074BC89D7B5A32 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_pkware.c */,
+				F365B93ABEA34B77BF13E7A0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_progress.c */,
+				138474A728BD40658F387F07 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_random_unix.c */,
+				D6E6B8FFEFC3431087A02DBA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_rename.c */,
+				12CDC58B543346E6B38221C7 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_replace.c */,
+				D7FE82EBB22642C299DC348D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_archive_comment.c */,
+				D0CE65531FCE408BBA5ED557 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_archive_flag.c */,
+				AB8EA440C0594DD1956DF9D4 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_default_password.c */,
+				68B24BF632DF4BD3AE659815 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_file_comment.c */,
+				7E61145DA1724405A4062863 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_file_compression.c */,
+				583633B79443498BABA4A4E5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_name.c */,
+				FECB0E855A0149F88FA93AC1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_accept_empty.c */,
+				87DE5F8DDC674048981773D5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_begin_write.c */,
+				065F28DB720547A9A4B9D732 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_begin_write_cloning.c */,
+				D43CD7C40D4F4B3A924D2A76 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_buffer.c */,
+				C729A4A9C22F45489C6394F0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_call.c */,
+				B00883507F40487CAF406775 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_close.c */,
+				06720372D61B4FFDB018A2D1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_commit_write.c */,
+				222F64F16BDB40B9A896EF3F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_compress.c */,
+				A29AC1BE3D9540B08BA153B2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_crc.c */,
+				673591BFC0A04DFB887D688C /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_error.c */,
+				3B0DCCAC6F74497D8B3935CD /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_common.c */,
+				775317B25DAC421D92B7F07D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_stdio.c */,
+				ABD220DEF451449BAC8D439B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_stdio_named.c */,
+				AB0B846668B44565B841ED15 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_free.c */,
+				42A3246B3829495ABA4EB7DA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_function.c */,
+				D3F7DC6B6DF747809DD8E6E5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_get_file_attributes.c */,
+				2FFABE2474A7481C89655C48 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_is_deleted.c */,
+				1916F509ADA54D15A3B92BB1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_layered.c */,
+				D0501EA24C9D4B3E8C47B1CB /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_open.c */,
+				B8F6E907F90D450DBD32F1BF /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pass_to_lower_layer.c */,
+				76BC9F59897648B7BDAFFA60 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pkware_decode.c */,
+				59A6F7A97CB04828AD846ADF /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pkware_encode.c */,
+				597298D8C19E4AC596DB3737 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_read.c */,
+				D2EC2D4DA74947D4971CE3D3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_remove.c */,
+				B3FDE5EE5BB040C0AD0E6978 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_rollback_write.c */,
+				2E25941131B2448480F60742 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_seek.c */,
+				1D0F26BE75604043873C11E5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_seek_write.c */,
+				D6266BDAEF7F40B1B5EF9EEB /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_stat.c */,
+				0EEE9B5A5C5D40099B1EFD2F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_supports.c */,
+				636525AE16FF401083544672 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_tell.c */,
+				6EEF936DC9494D4A928081EE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_tell_write.c */,
+				29970A5F0FD64CE18368A0A2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_window.c */,
+				4BA4F708C4654346B7EF6B7F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_write.c */,
+				C7F4C51B96FB4380A72D0B53 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_zip.c */,
+				CDF3060432E44FF0B5E76ED5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_zip_new.c */,
+				BF2A686A5F0A4CEAACDB005E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat.c */,
+				380CBD0094D44E1BA20048EE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat_index.c */,
+				FC01837DBF5C41BBA0F30C74 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat_init.c */,
+				A8A02764ED854DCEB047B77D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_strerror.c */,
+				B46BADE55A144B078096157D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_string.c */,
+				653D5076E37F47DD8437DF71 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange.c */,
+				63D74677F7AC4A7E8FB4DE45 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_all.c */,
+				859C0BF69CFE4535AF2EB8DA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_archive.c */,
+				83FB1F7764CF4F31AA562335 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_data.c */,
+				FDF7E02B8498469D82E94311 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_utf-8.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9286525F5FF045DDB63A91C7 /* zip */ = {
+			isa = PBXGroup;
+			children = (
+				8E2DDF704CD64D8893FED349 /* Source Files */,
+				B8FCF3C8A8B84C919211EB04 /* CMake Rules */,
+				250ACAE76CEF4C54B59EACDA /* Resources */,
+				4C68A87B00B7416EBCBC357A /* /Users/chachillie/flycast/core/deps/libzip/lib/CMakeLists.txt */,
+			);
+			name = zip;
+			sourceTree = "<group>";
+		};
+		AD4801200E9F4730AD6413CB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B8FCF3C8A8B84C919211EB04 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				27360988BF16426D813B80C0 /* /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CEC7203028BD4330B8059701 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC98E81F8AEA431BA98E00AE /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				7218D2C21AC24B6392BC672A /* CMake Rules */,
+				13DC21DE3A64486DB4E180AB /* /Users/chachillie/flycast/core/deps/libzip/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		E2471B8CB40C41E39AFEE704 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AA1697EDEC0ABD31E514DBF /* zip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF35FAAADADE4D18BB17B064 /* Build configuration list for PBXNativeTarget "zip" */;
+			buildPhases = (
+				B6E933C6994FB01B879112D3 /* Generate lib/zip_err_str.c */,
+				46142F0CEE4942A183BE6870 /* Sources */,
+				597ACC80B91D4CEDBA989EA3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zip;
+			productName = zip;
+			productReference = 8A3631142DDD49E9A5475A47 /* zip */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2095E9D658B41EABA2254F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = F18E2AEE372747CE8CD5278A /* Build configuration list for PBXProject "libzip" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				E917F6F28C2E426F8A7B4F9E /* Debug */,
+				E3BA23EA6BAB4391B4BD6078 /* Release */,
+				7355E925F3D749AF8CC8F048 /* MinSizeRel */,
+				F683EB64EAA843A5AC49D868 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 23F244592A7748FABBF529DB;
+			projectDirPath = /Users/chachillie/flycast/core/deps/libzip;
+			projectRoot = "";
+			targets = (
+				A81D197B5D02F988E4923AA5 /* ALL_BUILD */,
+				1930089A544C27C745D10B9F /* ZERO_CHECK */,
+				F5E783348C66B013FDA5BF2D /* dist */,
+				3F9FC3B1E1DF9D808E582FBD /* distcheck */,
+				5CD297B4CAB2383334516D18 /* install */,
+				1F0813A8741CC2E4ED13875D /* package */,
+				7AA1697EDEC0ABD31E514DBF /* zip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36D71C58526DC9EC5B7BF82B /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/chachillie/flycast/build/core/deps/libzip/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  make -f /Users/chachillie/flycast/build/core/deps/libzip/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  make -f /Users/chachillie/flycast/build/core/deps/libzip/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  make -f /Users/chachillie/flycast/build/core/deps/libzip/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  make -f /Users/chachillie/flycast/build/core/deps/libzip/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		377242A5DED5CB935A3DCAD2 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/chachillie/flycast/build/core/deps/libzip/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3B987541FC06DE80E4A5F569 /* Generate CMakeFiles/distcheck */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/distcheck";
+			outputPaths = (
+/Users/chachillie/flycast/build/core/deps/libzip/CMakeFiles/distcheck			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast
+  chmod -R u+w flycast- flycast--build flycast--dest 2>/dev/null || true
+  rm -rf flycast- flycast--build flycast--dest
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E tar xf /Users/chachillie/flycast/build/flycast-.tar.gz
+  chmod -R u-w flycast-
+  mkdir flycast--build
+  mkdir flycast--dest
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_PREFIX=flycast--dest flycast- -B flycast--build
+  make -C flycast--build -j4
+  make -C flycast--build test
+  make -C flycast--build install
+  make -C flycast--build clean
+  chmod -R u+w flycast- flycast--build flycast--dest
+  rm -rf flycast- flycast--build flycast--dest
+  echo flycast-.tar.gz\\ is\\ ready\\ for\\ distribution.
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast
+  chmod -R u+w flycast- flycast--build flycast--dest 2>/dev/null || true
+  rm -rf flycast- flycast--build flycast--dest
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E tar xf /Users/chachillie/flycast/build/flycast-.tar.gz
+  chmod -R u-w flycast-
+  mkdir flycast--build
+  mkdir flycast--dest
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_PREFIX=flycast--dest flycast- -B flycast--build
+  make -C flycast--build -j4
+  make -C flycast--build test
+  make -C flycast--build install
+  make -C flycast--build clean
+  chmod -R u+w flycast- flycast--build flycast--dest
+  rm -rf flycast- flycast--build flycast--dest
+  echo flycast-.tar.gz\\ is\\ ready\\ for\\ distribution.
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast
+  chmod -R u+w flycast- flycast--build flycast--dest 2>/dev/null || true
+  rm -rf flycast- flycast--build flycast--dest
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E tar xf /Users/chachillie/flycast/build/flycast-.tar.gz
+  chmod -R u-w flycast-
+  mkdir flycast--build
+  mkdir flycast--dest
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_PREFIX=flycast--dest flycast- -B flycast--build
+  make -C flycast--build -j4
+  make -C flycast--build test
+  make -C flycast--build install
+  make -C flycast--build clean
+  chmod -R u+w flycast- flycast--build flycast--dest
+  rm -rf flycast- flycast--build flycast--dest
+  echo flycast-.tar.gz\\ is\\ ready\\ for\\ distribution.
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast
+  chmod -R u+w flycast- flycast--build flycast--dest 2>/dev/null || true
+  rm -rf flycast- flycast--build flycast--dest
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E tar xf /Users/chachillie/flycast/build/flycast-.tar.gz
+  chmod -R u-w flycast-
+  mkdir flycast--build
+  mkdir flycast--dest
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_PREFIX=flycast--dest flycast- -B flycast--build
+  make -C flycast--build -j4
+  make -C flycast--build test
+  make -C flycast--build install
+  make -C flycast--build clean
+  chmod -R u+w flycast- flycast--build flycast--dest
+  rm -rf flycast- flycast--build flycast--dest
+  echo flycast-.tar.gz\\ is\\ ready\\ for\\ distribution.
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast/build
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast/build
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast/build
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast/build
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8A9C9AD35ADBE62D807CB277 /* Generate CMakeFiles/dist */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/dist";
+			outputPaths = (
+/Users/chachillie/flycast/build/core/deps/libzip/CMakeFiles/dist			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast
+  git config tar.tar.xz.command xz\\ -c
+  git archive --prefix=flycast-/ -o /Users/chachillie/flycast/build/flycast-.tar.gz HEAD
+  git archive --prefix=flycast-/ -o /Users/chachillie/flycast/build/flycast-.tar.xz HEAD
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast
+  git config tar.tar.xz.command xz\\ -c
+  git archive --prefix=flycast-/ -o /Users/chachillie/flycast/build/flycast-.tar.gz HEAD
+  git archive --prefix=flycast-/ -o /Users/chachillie/flycast/build/flycast-.tar.xz HEAD
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast
+  git config tar.tar.xz.command xz\\ -c
+  git archive --prefix=flycast-/ -o /Users/chachillie/flycast/build/flycast-.tar.gz HEAD
+  git archive --prefix=flycast-/ -o /Users/chachillie/flycast/build/flycast-.tar.xz HEAD
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast
+  git config tar.tar.xz.command xz\\ -c
+  git archive --prefix=flycast-/ -o /Users/chachillie/flycast/build/flycast-.tar.gz HEAD
+  git archive --prefix=flycast-/ -o /Users/chachillie/flycast/build/flycast-.tar.xz HEAD
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B6E933C6994FB01B879112D3 /* Generate lib/zip_err_str.c */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+/Users/chachillie/flycast/core/deps/libzip/cmake/GenerateZipErrorStrings.cmake,/Users/chachillie/flycast/core/deps/libzip/lib/zip.h,/Users/chachillie/flycast/core/deps/libzip/lib/zipint.h			);
+			name = "Generate lib/zip_err_str.c";
+			outputPaths = (
+/Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip/lib
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DPROJECT_SOURCE_DIR=/Users/chachillie/flycast/core/deps/libzip -DCMAKE_CURRENT_BINARY_DIR=/Users/chachillie/flycast/build/core/deps/libzip/lib -P /Users/chachillie/flycast/core/deps/libzip/cmake/GenerateZipErrorStrings.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip/lib
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DPROJECT_SOURCE_DIR=/Users/chachillie/flycast/core/deps/libzip -DCMAKE_CURRENT_BINARY_DIR=/Users/chachillie/flycast/build/core/deps/libzip/lib -P /Users/chachillie/flycast/core/deps/libzip/cmake/GenerateZipErrorStrings.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip/lib
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DPROJECT_SOURCE_DIR=/Users/chachillie/flycast/core/deps/libzip -DCMAKE_CURRENT_BINARY_DIR=/Users/chachillie/flycast/build/core/deps/libzip/lib -P /Users/chachillie/flycast/core/deps/libzip/cmake/GenerateZipErrorStrings.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/libzip/lib
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DPROJECT_SOURCE_DIR=/Users/chachillie/flycast/core/deps/libzip -DCMAKE_CURRENT_BINARY_DIR=/Users/chachillie/flycast/build/core/deps/libzip/lib -P /Users/chachillie/flycast/core/deps/libzip/cmake/GenerateZipErrorStrings.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		C56B9F6AFCDF6290DD9A9AB7 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D17AF9110EF496C673E75CFF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46142F0CEE4942A183BE6870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2831935E44A49619E1F05BF /* /Users/chachillie/flycast/build/core/deps/libzip/lib/zip_err_str.c */,
+				D459F3D8B2A5417681742486 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add.c */,
+				23573CE122634DC7A9231132 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add_dir.c */,
+				5D4496E501CE4A5DA7580606 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_add_entry.c */,
+				00C325351226476D9D853401 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_algorithm_deflate.c */,
+				F588C966996549CB9C41ADF9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_algorithm_zstd.c */,
+				460BE5F9D3DA4351B1718A37 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_buffer.c */,
+				8284AA40208F4E4F83107E46 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_close.c */,
+				AEEB168AFCCF4B06A1C4CFB6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_delete.c */,
+				990D131F905E4096AB9A9493 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_dir_add.c */,
+				68CC4CDFE1244D60A71788D6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_dirent.c */,
+				6CA8A94F44264F2787890FDB /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_discard.c */,
+				B8CFE4F0FF7348CDB44A3045 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_entry.c */,
+				9F6308836C384A9DBBBDB74F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error.c */,
+				A43785181E74414F9B5B0348 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_clear.c */,
+				A7D96EADAAA043F4ABAA0519 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_get.c */,
+				D2542392FCB64291B3218BA0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_get_sys_type.c */,
+				212FEF56EC304994ADF21670 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_strerror.c */,
+				2E06D3D8D05D4369855534E9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_error_to_str.c */,
+				0D294289C2BA415AB8B5897F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_extra_field.c */,
+				27D68B0787074EA2B8B76A14 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_extra_field_api.c */,
+				81FAD10ED55645378D35C2B3 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fclose.c */,
+				121AF6364E8647839CA13026 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fdopen.c */,
+				444E75E5534B49D5B20001F4 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_add.c */,
+				9B4020495C5E4D2EA27B18EA /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_error_clear.c */,
+				5FCA7E7CB0FC430E97256DA5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_error_get.c */,
+				71DE9A74B3A845F685EAD84F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_comment.c */,
+				1B3AC645190546BA9FA48975 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_external_attributes.c */,
+				BA78CA5BF4404BB290323D5B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_get_offset.c */,
+				6C9078DD6C334AF6B964C02E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_rename.c */,
+				69062B493FE44C27BAF8EB6F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_replace.c */,
+				281D9993E11D4144AA6709D2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_comment.c */,
+				0C5C4B245DA745EFB5456B3C /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_encryption.c */,
+				B55E96BA48B44B1E8CFE774F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_external_attributes.c */,
+				86341A126BE342EB8961FC73 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_set_mtime.c */,
+				8283C1EBDC5843C6A17BD722 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_file_strerror.c */,
+				71D0AE55687F4304B5A5D357 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen.c */,
+				55EA1E8E6B7C4F3586791642 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_encrypted.c */,
+				E047ED26825D453F8EB4DECE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_index.c */,
+				CFB742E0E7D841669FFCF8C8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fopen_index_encrypted.c */,
+				4866D228767B4A159DFFE80F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fread.c */,
+				2B984F4A38D946AB907F1619 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_fseek.c */,
+				4AD9E73B00A24B6DB3794AAC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_ftell.c */,
+				311763B79DE84482A18E4A5D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_archive_comment.c */,
+				99821AD2DB7546C99D3E18A9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_archive_flag.c */,
+				C318363A403C442B8AFD86E8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_encryption_implementation.c */,
+				1D5D1C52AD414E81B73F7D0B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_file_comment.c */,
+				2BDC32CBB3E94AD5BFE7DBF1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_name.c */,
+				E5EF93CB311D44E6B8272153 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_num_entries.c */,
+				239B3AA16FE94D19ABFD685A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_get_num_files.c */,
+				1F2F620ECBEF4529A9802D64 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_hash.c */,
+				0E847E4B0C4D4E149FE81471 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_io_util.c */,
+				0F6D93BE4B1B4C7E91B4769D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_libzip_version.c */,
+				0BC8BD6C069C420482EDBAE9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_memdup.c */,
+				417F135D8C644618B651F59E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_name_locate.c */,
+				81FE22FD5D4B4A96AC2284B6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_new.c */,
+				C0F82FEB49574BC09D900B76 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_open.c */,
+				36007772E79D4E5AA5BAFD51 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_pkware.c */,
+				5EC090662804417088629AE9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_progress.c */,
+				2CA1A6EBFA0B4D369AF0E87A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_random_unix.c */,
+				E181AC54E72C49EDA1D5E113 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_rename.c */,
+				F4C32EFE9E1B49498470A288 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_replace.c */,
+				5B689659951F41FFA6089056 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_archive_comment.c */,
+				5ABC0FA5B8BF439C9EC3A5F5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_archive_flag.c */,
+				13DB56DD06C54CFDBAE5C9FC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_default_password.c */,
+				E7F0DF72309D4DC68DB65EFB /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_file_comment.c */,
+				BD0B16E84C6741058847CE56 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_file_compression.c */,
+				E3F4730AF69543ACA3EEF83E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_set_name.c */,
+				FBCEF6CA411D44A6B7739CDC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_accept_empty.c */,
+				094B4B8C4CBA43429A0F865E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_begin_write.c */,
+				D7DDAA9F37A547F6AD44C687 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_begin_write_cloning.c */,
+				AD097AF991EC46B2B0381A6C /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_buffer.c */,
+				2F6BAFF8ED3C4078BB39F618 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_call.c */,
+				A44BCEF5FE9646B787E1B814 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_close.c */,
+				43D5B1F503294015A0E71DED /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_commit_write.c */,
+				6FDCC0225C9645D586156F3E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_compress.c */,
+				4DCF77B6B3DB4C03841FF234 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_crc.c */,
+				D146C2133C0E43F3B66E7EA4 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_error.c */,
+				5FF1ADC5D7BF419D9BE9DFA6 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_common.c */,
+				054A5353C0A8439A9F4757B8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_stdio.c */,
+				9EA6969DAFE947D590E20A99 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_file_stdio_named.c */,
+				9C79914C04964FB18F8D61F2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_free.c */,
+				56DBE8E7F7FB49D98BFC67E7 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_function.c */,
+				18767F45DDF445E786714B9C /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_get_file_attributes.c */,
+				F79A015B7C614DADAEC408B5 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_is_deleted.c */,
+				641C206A7BF24EEC9416E18E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_layered.c */,
+				3919E34A09E74EEEB9E6AF93 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_open.c */,
+				3A682060456D41FDA013FDA2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pass_to_lower_layer.c */,
+				AA2D32DE7C4E49FFBA755D8B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pkware_decode.c */,
+				BF9DBE5430FB4796AF673CD2 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_pkware_encode.c */,
+				1115916EAD174EFAB460AA88 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_read.c */,
+				9A21AA7719924EE69E84F4B1 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_remove.c */,
+				786B9FB3D543466EB371E240 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_rollback_write.c */,
+				AA5BBDD24C05424383B22432 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_seek.c */,
+				EA3A97D22DFE4B069A40192D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_seek_write.c */,
+				5AF6487A34874634B885A494 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_stat.c */,
+				6AA759EC91874B21A0DECA59 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_supports.c */,
+				2FA946EFC0764273BE86F7C8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_tell.c */,
+				236F268A79924F75A858383D /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_tell_write.c */,
+				12FC62FA1944480E8D87DC2F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_window.c */,
+				A47F10B0DFC049E7A1F49692 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_write.c */,
+				E8BFD80D3CC64959AA885855 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_zip.c */,
+				C24721DD4D11436EB39A121A /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_source_zip_new.c */,
+				EE7CD4115CF14296BB4B2AE0 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat.c */,
+				EBD0143A9321402BAEA8D8F8 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat_index.c */,
+				A6A998640CF64AFEA206A0CC /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_stat_init.c */,
+				EC2095F4C6A8455DBD1C09DF /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_strerror.c */,
+				A73F1EB2A2D54A1F896E524F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_string.c */,
+				9A61E8402A0643EC9F22E65B /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange.c */,
+				B563A78359B74D568AD0B4BE /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_all.c */,
+				AFD398F8922248EFA8ACF38E /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_archive.c */,
+				256FEE993C384D63A2889A7F /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_unchange_data.c */,
+				B4B3CD661DAD46C2B9C861B9 /* /Users/chachillie/flycast/core/deps/libzip/lib/zip_utf-8.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19F02AAF482A402786849217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AA1697EDEC0ABD31E514DBF /* zip */;
+			targetProxy = 42F56ACDAF1543A79B2F160C /* PBXContainerItemProxy */;
+		};
+		2EFDF2D5E4354C77B96852A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1930089A544C27C745D10B9F /* ZERO_CHECK */;
+			targetProxy = 8078A26E401C479F92A7D493 /* PBXContainerItemProxy */;
+		};
+		38DB31B1939D429FB77002AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1930089A544C27C745D10B9F /* ZERO_CHECK */;
+			targetProxy = A66DBEC73F82412486F8C403 /* PBXContainerItemProxy */;
+		};
+		3F3C0BF03341408FBE929F44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A81D197B5D02F988E4923AA5 /* ALL_BUILD */;
+			targetProxy = 193B84530B8249208C7A7492 /* PBXContainerItemProxy */;
+		};
+		800C6D6020214CAA8D5B42DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1930089A544C27C745D10B9F /* ZERO_CHECK */;
+			targetProxy = 1F18B560FF794DBC93ABC16C /* PBXContainerItemProxy */;
+		};
+		974753E7BB534643A3F39FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A81D197B5D02F988E4923AA5 /* ALL_BUILD */;
+			targetProxy = B9921F0714EE4859852AF561 /* PBXContainerItemProxy */;
+		};
+		ED51B97EA8A64C71B8AF9A09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5E783348C66B013FDA5BF2D /* dist */;
+			targetProxy = 3B9831D6B17E411FB48E10D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01CC2F0097E14497A52EE513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		031DFDCA49BC41209EBECD59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/chachillie/flycast/build/core/deps/libzip/lib/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/chachillie/flycast/core/deps/libzip/lib,/Users/chachillie/flycast/build/core/deps/libzip,"/Users/chachillie/flycast/core/deps/libchdr/deps/zstd-1.5.6/build/cmake/../../lib","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG -fvisibility=hidden ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zip;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/chachillie/flycast/build/build/zip.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		1A02252FF8444599A72199AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		1E08029205B043209675F858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = /Users/chachillie/flycast/build/build;
+			};
+			name = Debug;
+		};
+		20D127FC470E4FDA93F09644 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = /Users/chachillie/flycast/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		20F0A683DCE141019FDD135F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = /Users/chachillie/flycast/build/build;
+			};
+			name = MinSizeRel;
+		};
+		253F01FE93AD447D87A62ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = distcheck;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		27D3DCDDDC9346958E103B6C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/chachillie/flycast/build/core/deps/libzip/lib/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/chachillie/flycast/core/deps/libzip/lib,/Users/chachillie/flycast/build/core/deps/libzip,"/Users/chachillie/flycast/core/deps/libchdr/deps/zstd-1.5.6/build/cmake/../../lib","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG -fvisibility=hidden ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zip;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/chachillie/flycast/build/build/zip.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		35EFE9E703D643288837E2F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = /Users/chachillie/flycast/build/build;
+			};
+			name = Release;
+		};
+		388C6B6CB63B496E8E2B908E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		406D2BBBB39846F2A44955E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = distcheck;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		46E6CC04E8B4453997D5CA49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		482D08BF9E474C6582FC63A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/chachillie/flycast/build/core/deps/libzip/lib/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/chachillie/flycast/core/deps/libzip/lib,/Users/chachillie/flycast/build/core/deps/libzip,"/Users/chachillie/flycast/core/deps/libchdr/deps/zstd-1.5.6/build/cmake/../../lib","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   -fvisibility=hidden ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zip;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/chachillie/flycast/build/build/zip.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		4BAD894D21E34F5F9ADF7E8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5AA33D7D423C4517B745B78B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/chachillie/flycast/build/core/deps/libzip/lib/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/chachillie/flycast/core/deps/libzip/lib,/Users/chachillie/flycast/build/core/deps/libzip,"/Users/chachillie/flycast/core/deps/libchdr/deps/zstd-1.5.6/build/cmake/../../lib","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG -fvisibility=hidden ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zip;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/chachillie/flycast/build/build/zip.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		63FFEB8EAB9747789DDFB254 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6A513E48B37047E7B6F7AA74 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6A767A0203C646F8B100A693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		70925550921F419596A01427 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = distcheck;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		84620796F0B74D85AE8A8FBF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		918E103DD87842B99491BC05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9883DA3ED4EC4DAD8D6D2C27 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = distcheck;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A4BA0D58CA9D4F1B8FF7E10D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B0B2CB5400084442B64BFE22 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C00BBD4F8F6F429AA3277315 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C5779B7A07784562A35ABC97 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DFAEE6AA3CBC405CBD6E04D2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E11672B63E8142E9BD0EDCA6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E4EB18407C654969B0D6D5B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EAD780B32E5D4FF19136A927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F76B73B1FC0E4E07971A74DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F8A2BF83BFB2493292998D81 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A01C30DB7424971BCFE1EC1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A767A0203C646F8B100A693 /* Debug */,
+				388C6B6CB63B496E8E2B908E /* Release */,
+				A4BA0D58CA9D4F1B8FF7E10D /* MinSizeRel */,
+				F8A2BF83BFB2493292998D81 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		136CAD21D8EC4DBAB0CA468D /* Build configuration list for PBXAggregateTarget "distcheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406D2BBBB39846F2A44955E9 /* Debug */,
+				253F01FE93AD447D87A62ED1 /* Release */,
+				70925550921F419596A01427 /* MinSizeRel */,
+				9883DA3ED4EC4DAD8D6D2C27 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		409E47006BFC4082899B7D40 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				918E103DD87842B99491BC05 /* Debug */,
+				EAD780B32E5D4FF19136A927 /* Release */,
+				C5779B7A07784562A35ABC97 /* MinSizeRel */,
+				C00BBD4F8F6F429AA3277315 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		41EDEBBDA88145D39317533C /* Build configuration list for PBXAggregateTarget "dist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4EB18407C654969B0D6D5B9 /* Debug */,
+				F76B73B1FC0E4E07971A74DE /* Release */,
+				E11672B63E8142E9BD0EDCA6 /* MinSizeRel */,
+				B0B2CB5400084442B64BFE22 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		710755200A304278ACAEE073 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAD894D21E34F5F9ADF7E8A /* Debug */,
+				46E6CC04E8B4453997D5CA49 /* Release */,
+				63FFEB8EAB9747789DDFB254 /* MinSizeRel */,
+				6A513E48B37047E7B6F7AA74 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8268934403074AC5A2832834 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01CC2F0097E14497A52EE513 /* Debug */,
+				1A02252FF8444599A72199AD /* Release */,
+				DFAEE6AA3CBC405CBD6E04D2 /* MinSizeRel */,
+				84620796F0B74D85AE8A8FBF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DF35FAAADADE4D18BB17B064 /* Build configuration list for PBXNativeTarget "zip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				482D08BF9E474C6582FC63A4 /* Debug */,
+				031DFDCA49BC41209EBECD59 /* Release */,
+				27D3DCDDDC9346958E103B6C /* MinSizeRel */,
+				5AA33D7D423C4517B745B78B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F18E2AEE372747CE8CD5278A /* Build configuration list for PBXProject "libzip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E08029205B043209675F858 /* Debug */,
+				35EFE9E703D643288837E2F9 /* Release */,
+				20F0A683DCE141019FDD135F /* MinSizeRel */,
+				20D127FC470E4FDA93F09644 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2095E9D658B41EABA2254F9 /* Project object */;
+}

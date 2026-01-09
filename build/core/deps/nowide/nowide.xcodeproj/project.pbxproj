@@ -1,0 +1,1159 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1930089A544C27C745D10B9F /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B5B13E2A23664204B2A50F67 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C9392C1B583B08046BE17288 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		1F0813A8741CC2E4ED13875D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CF57B68DBA734829A8532E34 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				9ADD2A5962C941F7A9F2665C /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		5CD297B4CAB2383334516D18 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0DEEDC393E4244CF95652A71 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				01773E44C26D4F80947ACF65 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A81D197B5D02F988E4923AA5 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F09DCC07DDC54BDAA20FEFA1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				B118F21AC2CFCC8ECD2CE7C8 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				4C60024C94944CBA921ED07A /* PBXTargetDependency */,
+				B070E50EDE9743E9A23C3516 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0B74C00964B7442995B75BBF /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/cstdio.hpp */ = {isa = PBXBuildFile; fileRef = AE22310782AC4359B96C2555 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/cstdio.hpp */; };
+		0D9D62CB9EF2438B9228FCCE /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/fstream.hpp */ = {isa = PBXBuildFile; fileRef = 8D3F26D72CEB498B957B2E0F /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/fstream.hpp */; };
+		0E3C8181EB8C43B2A0E14F16 /* /Users/chachillie/flycast/build/core/deps/nowide/CMakeFiles/nowide.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 26C86B704B18439D807EAF3B /* /Users/chachillie/flycast/build/core/deps/nowide/CMakeFiles/nowide.dir/Info.plist */; };
+		1404F4A4DB4F4BBE9CF62076 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/iostream.hpp */ = {isa = PBXBuildFile; fileRef = 6D6A3F16277944D79EA13B1A /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/iostream.hpp */; };
+		16701F385E574CCDA9B31F16 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/stackstring.hpp */ = {isa = PBXBuildFile; fileRef = 3DB53F8C60334175977E1FF4 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/stackstring.hpp */; };
+		16BC17E703864FD3A88CF1DD /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/convert.hpp */ = {isa = PBXBuildFile; fileRef = FC671C7866F7465CA72E9F64 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/convert.hpp */; };
+		24B870852BBE4CA58E15FF37 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/config.hpp */ = {isa = PBXBuildFile; fileRef = C30B538E35444EAC96C68265 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/config.hpp */; };
+		30BEE896696243EFAA931675 /* /Users/chachillie/flycast/core/deps/nowide/src/filebuf.cpp */ = {isa = PBXBuildFile; fileRef = B21F3D30716641B5B5F76573 /* /Users/chachillie/flycast/core/deps/nowide/src/filebuf.cpp */; };
+		3E164F762E3146708E99AFD7 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/is_path.hpp */ = {isa = PBXBuildFile; fileRef = CCDFC817D7CF4B41B7FDD3A0 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/is_path.hpp */; };
+		42F339CA44DF46759B8962E1 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/utf.hpp */ = {isa = PBXBuildFile; fileRef = 9F49E63EC7CA489AA605B153 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/utf.hpp */; };
+		481FAEAC28544415B23C5FAD /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/cstdlib.hpp */ = {isa = PBXBuildFile; fileRef = 4FBBC5D3FCAF498E8843E936 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/cstdlib.hpp */; };
+		514359280CC14565948D6ED0 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/filesystem.hpp */ = {isa = PBXBuildFile; fileRef = B1B0992562654E9E9EF1C5DE /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/filesystem.hpp */; };
+		5ECEE9DB6C924AD899A9C20E /* /Users/chachillie/flycast/core/deps/nowide/src/cstdio.cpp */ = {isa = PBXBuildFile; fileRef = 4B94DF986C3D47F1B5091160 /* /Users/chachillie/flycast/core/deps/nowide/src/cstdio.cpp */; };
+		659E153B45624028B2FB787E /* /Users/chachillie/flycast/core/deps/nowide/src/cstdlib.cpp */ = {isa = PBXBuildFile; fileRef = 20EB0A8FD54148658D913CCB /* /Users/chachillie/flycast/core/deps/nowide/src/cstdlib.cpp */; };
+		7011E45ECE474D888C7B495F /* /Users/chachillie/flycast/core/deps/nowide/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9617C3D6C1574237BFF8E0B8 /* /Users/chachillie/flycast/core/deps/nowide/CMakeLists.txt */; };
+		78A1208648B648AF97AE81BF /* /Users/chachillie/flycast/core/deps/nowide/src/iostream.cpp */ = {isa = PBXBuildFile; fileRef = FC7072E8290F4D829992F94C /* /Users/chachillie/flycast/core/deps/nowide/src/iostream.cpp */; };
+		79922DC948F14B73A62CFCCF /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/replacement.hpp */ = {isa = PBXBuildFile; fileRef = 9345ECD4610A456089517B95 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/replacement.hpp */; };
+		8BDBA861915648ECA18B0B23 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/filebuf.hpp */ = {isa = PBXBuildFile; fileRef = 23DF9169F65744C9A47F7AAB /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/filebuf.hpp */; };
+		9DA5952AC4A0466F85C65C2B /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/args.hpp */ = {isa = PBXBuildFile; fileRef = 011F71D1D70F4A3AB4EB3D48 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/args.hpp */; };
+		9F05A7CB2433407B93570CF9 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/stat.hpp */ = {isa = PBXBuildFile; fileRef = 648AD71A3FEA452291634BB5 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/stat.hpp */; };
+		A0739537F5084749B68E9EC1 /* /Users/chachillie/flycast/core/deps/nowide/src/console_buffer.cpp */ = {isa = PBXBuildFile; fileRef = 7923644E61E54CFC98A8B56A /* /Users/chachillie/flycast/core/deps/nowide/src/console_buffer.cpp */; };
+		B4DB7412753242B1A61AB690 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/convert.hpp */ = {isa = PBXBuildFile; fileRef = 442FB28FBBC64285B16D269F /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/convert.hpp */; };
+		B8DDF6A0F02F486BB7F81545 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf/utf.hpp */ = {isa = PBXBuildFile; fileRef = C95605E687F248A381F6D074 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf/utf.hpp */; };
+		D7AE6D9C9D9C429BB3E27208 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf8_codecvt.hpp */ = {isa = PBXBuildFile; fileRef = 8B92446B71B544BD85D819DD /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf8_codecvt.hpp */; };
+		E41B23FD82D14CB69F3E186A /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf/convert.hpp */ = {isa = PBXBuildFile; fileRef = 34073A2E7B0B4E8295A4F5FB /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf/convert.hpp */; };
+		E62C8D29B513433795501D71 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/quoted.hpp */ = {isa = PBXBuildFile; fileRef = E7EFBBF47E2E4574B9C8CAB5 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/quoted.hpp */; };
+		EE9C62EA6D354440B5BD25E2 /* /Users/chachillie/flycast/core/deps/nowide/src/stat.cpp */ = {isa = PBXBuildFile; fileRef = A6B04B92AD57488DBB288025 /* /Users/chachillie/flycast/core/deps/nowide/src/stat.cpp */; };
+		F4047C4883AB4D8BAB020F38 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/windows.hpp */ = {isa = PBXBuildFile; fileRef = 28C109472C124611B7157754 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/windows.hpp */; };
+		FEDF5A2EE46C471DB7E58807 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/is_string_container.hpp */ = {isa = PBXBuildFile; fileRef = 72B91159227248DB964405DD /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/is_string_container.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		641DE9B8BA69445B84A20C86 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		67EF636437464EFDAD00DB0A /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		6BDA114013F14CB9B9EBE135 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		9BEE97789E954B55B6630CA0 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		00930E29BF5A46D3B5549D93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AADF602CB4714C4782B57990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1930089A544C27C745D10B9F;
+			remoteInfo = ZERO_CHECK;
+		};
+		1056364C98B9412497478A89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AADF602CB4714C4782B57990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1930089A544C27C745D10B9F;
+			remoteInfo = ZERO_CHECK;
+		};
+		636A83413F154EA1A194B648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AADF602CB4714C4782B57990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81D197B5D02F988E4923AA5;
+			remoteInfo = ALL_BUILD;
+		};
+		A9FB0BB8666847DC8CF42536 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AADF602CB4714C4782B57990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81D197B5D02F988E4923AA5;
+			remoteInfo = ALL_BUILD;
+		};
+		F423604F728E4376934E8F28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AADF602CB4714C4782B57990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B752C9C7BC3D5683D01E5833;
+			remoteInfo = nowide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011F71D1D70F4A3AB4EB3D48 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/args.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = args.hpp; path = include/nowide/args.hpp; sourceTree = SOURCE_ROOT; };
+		175AE622281A4B53854D87EE /* nowide */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libnowide.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EB0A8FD54148658D913CCB /* /Users/chachillie/flycast/core/deps/nowide/src/cstdlib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cstdlib.cpp; path = src/cstdlib.cpp; sourceTree = SOURCE_ROOT; };
+		23DF9169F65744C9A47F7AAB /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/filebuf.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = filebuf.hpp; path = include/nowide/filebuf.hpp; sourceTree = SOURCE_ROOT; };
+		26C86B704B18439D807EAF3B /* /Users/chachillie/flycast/build/core/deps/nowide/CMakeFiles/nowide.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = /Users/chachillie/flycast/build/core/deps/nowide/CMakeFiles/nowide.dir/Info.plist; sourceTree = "<absolute>"; };
+		28C109472C124611B7157754 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/windows.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = windows.hpp; path = include/nowide/windows.hpp; sourceTree = SOURCE_ROOT; };
+		34073A2E7B0B4E8295A4F5FB /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf/convert.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = convert.hpp; path = include/nowide/utf/convert.hpp; sourceTree = SOURCE_ROOT; };
+		3DB53F8C60334175977E1FF4 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/stackstring.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = stackstring.hpp; path = include/nowide/stackstring.hpp; sourceTree = SOURCE_ROOT; };
+		442FB28FBBC64285B16D269F /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/convert.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = convert.hpp; path = include/nowide/detail/convert.hpp; sourceTree = SOURCE_ROOT; };
+		4B94DF986C3D47F1B5091160 /* /Users/chachillie/flycast/core/deps/nowide/src/cstdio.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cstdio.cpp; path = src/cstdio.cpp; sourceTree = SOURCE_ROOT; };
+		4FBBC5D3FCAF498E8843E936 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/cstdlib.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cstdlib.hpp; path = include/nowide/cstdlib.hpp; sourceTree = SOURCE_ROOT; };
+		648AD71A3FEA452291634BB5 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/stat.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = stat.hpp; path = include/nowide/stat.hpp; sourceTree = SOURCE_ROOT; };
+		6D6A3F16277944D79EA13B1A /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/iostream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = iostream.hpp; path = include/nowide/iostream.hpp; sourceTree = SOURCE_ROOT; };
+		72B91159227248DB964405DD /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/is_string_container.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = is_string_container.hpp; path = include/nowide/detail/is_string_container.hpp; sourceTree = SOURCE_ROOT; };
+		7923644E61E54CFC98A8B56A /* /Users/chachillie/flycast/core/deps/nowide/src/console_buffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = console_buffer.cpp; path = src/console_buffer.cpp; sourceTree = SOURCE_ROOT; };
+		8B92446B71B544BD85D819DD /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf8_codecvt.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = utf8_codecvt.hpp; path = include/nowide/utf8_codecvt.hpp; sourceTree = SOURCE_ROOT; };
+		8D3F26D72CEB498B957B2E0F /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/fstream.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fstream.hpp; path = include/nowide/fstream.hpp; sourceTree = SOURCE_ROOT; };
+		9345ECD4610A456089517B95 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/replacement.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = replacement.hpp; path = include/nowide/replacement.hpp; sourceTree = SOURCE_ROOT; };
+		9617C3D6C1574237BFF8E0B8 /* /Users/chachillie/flycast/core/deps/nowide/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9F49E63EC7CA489AA605B153 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/utf.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = utf.hpp; path = include/nowide/detail/utf.hpp; sourceTree = SOURCE_ROOT; };
+		A6B04B92AD57488DBB288025 /* /Users/chachillie/flycast/core/deps/nowide/src/stat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stat.cpp; path = src/stat.cpp; sourceTree = SOURCE_ROOT; };
+		ABCA8B20829F49C4A6E52852 /* /Users/chachillie/flycast/core/deps/nowide/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		AE22310782AC4359B96C2555 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/cstdio.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cstdio.hpp; path = include/nowide/cstdio.hpp; sourceTree = SOURCE_ROOT; };
+		B1B0992562654E9E9EF1C5DE /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/filesystem.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = filesystem.hpp; path = include/nowide/filesystem.hpp; sourceTree = SOURCE_ROOT; };
+		B21F3D30716641B5B5F76573 /* /Users/chachillie/flycast/core/deps/nowide/src/filebuf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = filebuf.cpp; path = src/filebuf.cpp; sourceTree = SOURCE_ROOT; };
+		C30B538E35444EAC96C68265 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/config.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = config.hpp; path = include/nowide/config.hpp; sourceTree = SOURCE_ROOT; };
+		C95605E687F248A381F6D074 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf/utf.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = utf.hpp; path = include/nowide/utf/utf.hpp; sourceTree = SOURCE_ROOT; };
+		CCDFC817D7CF4B41B7FDD3A0 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/is_path.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = is_path.hpp; path = include/nowide/detail/is_path.hpp; sourceTree = SOURCE_ROOT; };
+		E7EFBBF47E2E4574B9C8CAB5 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/quoted.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = quoted.hpp; path = include/nowide/quoted.hpp; sourceTree = SOURCE_ROOT; };
+		FC671C7866F7465CA72E9F64 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/convert.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = convert.hpp; path = include/nowide/convert.hpp; sourceTree = SOURCE_ROOT; };
+		FC7072E8290F4D829992F94C /* /Users/chachillie/flycast/core/deps/nowide/src/iostream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = iostream.cpp; path = src/iostream.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81E535DAFD394116900D3666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17A8F7F2FD934ECCB90A2824 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				011F71D1D70F4A3AB4EB3D48 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/args.hpp */,
+				C30B538E35444EAC96C68265 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/config.hpp */,
+				FC671C7866F7465CA72E9F64 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/convert.hpp */,
+				AE22310782AC4359B96C2555 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/cstdio.hpp */,
+				4FBBC5D3FCAF498E8843E936 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/cstdlib.hpp */,
+				442FB28FBBC64285B16D269F /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/convert.hpp */,
+				CCDFC817D7CF4B41B7FDD3A0 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/is_path.hpp */,
+				72B91159227248DB964405DD /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/is_string_container.hpp */,
+				9F49E63EC7CA489AA605B153 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/detail/utf.hpp */,
+				23DF9169F65744C9A47F7AAB /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/filebuf.hpp */,
+				B1B0992562654E9E9EF1C5DE /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/filesystem.hpp */,
+				8D3F26D72CEB498B957B2E0F /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/fstream.hpp */,
+				6D6A3F16277944D79EA13B1A /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/iostream.hpp */,
+				E7EFBBF47E2E4574B9C8CAB5 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/quoted.hpp */,
+				9345ECD4610A456089517B95 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/replacement.hpp */,
+				3DB53F8C60334175977E1FF4 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/stackstring.hpp */,
+				648AD71A3FEA452291634BB5 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/stat.hpp */,
+				34073A2E7B0B4E8295A4F5FB /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf/convert.hpp */,
+				C95605E687F248A381F6D074 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf/utf.hpp */,
+				8B92446B71B544BD85D819DD /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/utf8_codecvt.hpp */,
+				28C109472C124611B7157754 /* /Users/chachillie/flycast/core/deps/nowide/include/nowide/windows.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		2DEB5C0F4B1A4150B1639274 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7923644E61E54CFC98A8B56A /* /Users/chachillie/flycast/core/deps/nowide/src/console_buffer.cpp */,
+				4B94DF986C3D47F1B5091160 /* /Users/chachillie/flycast/core/deps/nowide/src/cstdio.cpp */,
+				20EB0A8FD54148658D913CCB /* /Users/chachillie/flycast/core/deps/nowide/src/cstdlib.cpp */,
+				B21F3D30716641B5B5F76573 /* /Users/chachillie/flycast/core/deps/nowide/src/filebuf.cpp */,
+				FC7072E8290F4D829992F94C /* /Users/chachillie/flycast/core/deps/nowide/src/iostream.cpp */,
+				A6B04B92AD57488DBB288025 /* /Users/chachillie/flycast/core/deps/nowide/src/stat.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		4BC2A40A5716408DB7940E30 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5B495A20477B4064BC885C78 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4BC2A40A5716408DB7940E30 /* CMake Rules */,
+				ABCA8B20829F49C4A6E52852 /* /Users/chachillie/flycast/core/deps/nowide/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		60F7A9C9A9EA48BD899BC5CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95850466C22547A98CF1A596 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26C86B704B18439D807EAF3B /* /Users/chachillie/flycast/build/core/deps/nowide/CMakeFiles/nowide.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC129ED6D4F74A2DA9F96BCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CB9CDBC9C906483C9F6615F0 = {
+			isa = PBXGroup;
+			children = (
+				F507811B6B5443B3B9E3F8B2 /* nowide */,
+				5B495A20477B4064BC885C78 /* ALL_BUILD */,
+				EE5F85B079BE4782B010F184 /* Products */,
+				60F7A9C9A9EA48BD899BC5CE /* Frameworks */,
+				BC129ED6D4F74A2DA9F96BCD /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		EE5F85B079BE4782B010F184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				175AE622281A4B53854D87EE /* nowide */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F507811B6B5443B3B9E3F8B2 /* nowide */ = {
+			isa = PBXGroup;
+			children = (
+				2DEB5C0F4B1A4150B1639274 /* Source Files */,
+				17A8F7F2FD934ECCB90A2824 /* Header Files */,
+				95850466C22547A98CF1A596 /* Resources */,
+				9617C3D6C1574237BFF8E0B8 /* /Users/chachillie/flycast/core/deps/nowide/CMakeLists.txt */,
+			);
+			name = nowide;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B752C9C7BC3D5683D01E5833 /* nowide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10593A32236E4D3FBF8EDAA5 /* Build configuration list for PBXNativeTarget "nowide" */;
+			buildPhases = (
+				E165784702A94DE29D8A577C /* Sources */,
+				81E535DAFD394116900D3666 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DBC9CB2DDD04DAFAD85899A /* PBXTargetDependency */,
+			);
+			name = nowide;
+			productName = nowide;
+			productReference = 175AE622281A4B53854D87EE /* nowide */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AADF602CB4714C4782B57990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 9EC89DE0E375423588AA6B52 /* Build configuration list for PBXProject "nowide" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				641DE9B8BA69445B84A20C86 /* Debug */,
+				67EF636437464EFDAD00DB0A /* Release */,
+				9BEE97789E954B55B6630CA0 /* MinSizeRel */,
+				6BDA114013F14CB9B9EBE135 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = CB9CDBC9C906483C9F6615F0;
+			projectDirPath = /Users/chachillie/flycast/core/deps/nowide;
+			projectRoot = "";
+			targets = (
+				A81D197B5D02F988E4923AA5 /* ALL_BUILD */,
+				1930089A544C27C745D10B9F /* ZERO_CHECK */,
+				5CD297B4CAB2383334516D18 /* install */,
+				B752C9C7BC3D5683D01E5833 /* nowide */,
+				1F0813A8741CC2E4ED13875D /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast/build
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast/build
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast/build
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast/build
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B118F21AC2CFCC8ECD2CE7C8 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/chachillie/flycast/build/core/deps/nowide/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		C9392C1B583B08046BE17288 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/chachillie/flycast/build/core/deps/nowide/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  make -f /Users/chachillie/flycast/build/core/deps/nowide/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  make -f /Users/chachillie/flycast/build/core/deps/nowide/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  make -f /Users/chachillie/flycast/build/core/deps/nowide/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/chachillie/flycast/build/core/deps/nowide
+  make -f /Users/chachillie/flycast/build/core/deps/nowide/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E165784702A94DE29D8A577C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0739537F5084749B68E9EC1 /* /Users/chachillie/flycast/core/deps/nowide/src/console_buffer.cpp */,
+				5ECEE9DB6C924AD899A9C20E /* /Users/chachillie/flycast/core/deps/nowide/src/cstdio.cpp */,
+				659E153B45624028B2FB787E /* /Users/chachillie/flycast/core/deps/nowide/src/cstdlib.cpp */,
+				30BEE896696243EFAA931675 /* /Users/chachillie/flycast/core/deps/nowide/src/filebuf.cpp */,
+				78A1208648B648AF97AE81BF /* /Users/chachillie/flycast/core/deps/nowide/src/iostream.cpp */,
+				EE9C62EA6D354440B5BD25E2 /* /Users/chachillie/flycast/core/deps/nowide/src/stat.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01773E44C26D4F80947ACF65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A81D197B5D02F988E4923AA5 /* ALL_BUILD */;
+			targetProxy = A9FB0BB8666847DC8CF42536 /* PBXContainerItemProxy */;
+		};
+		3DBC9CB2DDD04DAFAD85899A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1930089A544C27C745D10B9F /* ZERO_CHECK */;
+			targetProxy = 00930E29BF5A46D3B5549D93 /* PBXContainerItemProxy */;
+		};
+		4C60024C94944CBA921ED07A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B752C9C7BC3D5683D01E5833 /* nowide */;
+			targetProxy = F423604F728E4376934E8F28 /* PBXContainerItemProxy */;
+		};
+		9ADD2A5962C941F7A9F2665C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A81D197B5D02F988E4923AA5 /* ALL_BUILD */;
+			targetProxy = 636A83413F154EA1A194B648 /* PBXContainerItemProxy */;
+		};
+		B070E50EDE9743E9A23C3516 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1930089A544C27C745D10B9F /* ZERO_CHECK */;
+			targetProxy = 1056364C98B9412497478A89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04A31F31796F47E8B28C2628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		109F1B10B781493FA3F7CCF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		1334F8BE0B4F4CAB85124619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		1D29BB8343B442D9AAEA593D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/chachillie/flycast/build/core/deps/nowide/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NOWIDE_HAS_INIT_PRIORITY,NOWIDE_NO_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/chachillie/flycast/core/deps/nowide/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++17' -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -pedantic ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nowide;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/chachillie/flycast/build/build/nowide.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2E3B606051B64B1E832DDCCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/chachillie/flycast/build/core/deps/nowide/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NOWIDE_HAS_INIT_PRIORITY,NOWIDE_NO_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/chachillie/flycast/core/deps/nowide/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++17' -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -pedantic ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nowide;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/chachillie/flycast/build/build/nowide.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4E2DF86F61734E43B0052F75 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/chachillie/flycast/build/core/deps/nowide/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NOWIDE_HAS_INIT_PRIORITY,NOWIDE_NO_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/chachillie/flycast/core/deps/nowide/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++17' -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -pedantic ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nowide;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/chachillie/flycast/build/build/nowide.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		57072AE2DEF9478A9EF752B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = /Users/chachillie/flycast/build/build;
+			};
+			name = Debug;
+		};
+		6527F34A9BD0457E9A9BBB10 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7348CBCA74554B3097C2BB30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		80653C1C9F834BC4B522285D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		83A1B3CF57B24E9692B9F885 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = /Users/chachillie/flycast/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		924B72DED1C44F35A6C71D57 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		95C968F6BA7C40DCAA253CF7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9D46976A5AB74AE98544A6B0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A0DC58E09B1A4172BAA73B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/chachillie/flycast/build/core/deps/nowide/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NOWIDE_HAS_INIT_PRIORITY,NOWIDE_NO_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/chachillie/flycast/core/deps/nowide/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++17' -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wextra -pedantic ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nowide;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/chachillie/flycast/build/build/nowide.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A5435AD613EE45C3A2EB682E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CC996F9FEA02426F868D83AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D38AE03590EF4A21BAE4EA31 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DA881E13801A487199EA3274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DE398E6C3A71417E891A3540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E3D8845561784E84949DB6A4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = /Users/chachillie/flycast/build/build;
+			};
+			name = MinSizeRel;
+		};
+		F65DA99065794C15A4D8C316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = /Users/chachillie/flycast/build/build;
+			};
+			name = Release;
+		};
+		F95366DAE23D4DF398D52229 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FD4A38F50F704F8BA7AB8F7E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DEEDC393E4244CF95652A71 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7348CBCA74554B3097C2BB30 /* Debug */,
+				CC996F9FEA02426F868D83AF /* Release */,
+				9D46976A5AB74AE98544A6B0 /* MinSizeRel */,
+				D38AE03590EF4A21BAE4EA31 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		10593A32236E4D3FBF8EDAA5 /* Build configuration list for PBXNativeTarget "nowide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DC58E09B1A4172BAA73B7B /* Debug */,
+				2E3B606051B64B1E832DDCCB /* Release */,
+				4E2DF86F61734E43B0052F75 /* MinSizeRel */,
+				1D29BB8343B442D9AAEA593D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9EC89DE0E375423588AA6B52 /* Build configuration list for PBXProject "nowide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57072AE2DEF9478A9EF752B0 /* Debug */,
+				F65DA99065794C15A4D8C316 /* Release */,
+				E3D8845561784E84949DB6A4 /* MinSizeRel */,
+				83A1B3CF57B24E9692B9F885 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B5B13E2A23664204B2A50F67 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1334F8BE0B4F4CAB85124619 /* Debug */,
+				109F1B10B781493FA3F7CCF0 /* Release */,
+				6527F34A9BD0457E9A9BBB10 /* MinSizeRel */,
+				95C968F6BA7C40DCAA253CF7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CF57B68DBA734829A8532E34 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80653C1C9F834BC4B522285D /* Debug */,
+				DE398E6C3A71417E891A3540 /* Release */,
+				FD4A38F50F704F8BA7AB8F7E /* MinSizeRel */,
+				924B72DED1C44F35A6C71D57 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F09DCC07DDC54BDAA20FEFA1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA881E13801A487199EA3274 /* Debug */,
+				04A31F31796F47E8B28C2628 /* Release */,
+				A5435AD613EE45C3A2EB682E /* MinSizeRel */,
+				F95366DAE23D4DF398D52229 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AADF602CB4714C4782B57990 /* Project object */;
+}
