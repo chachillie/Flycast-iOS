@@ -673,10 +673,10 @@ void flush()
 
 void init()
 {
-#ifdef FEAT_NO_RWX_PAGES
-	bool rc = virtmem::prepare_jit_block(ARM7_TCB, ICacheSize, (void**)&ICache, &rx_offset);
+#if defined(FEAT_NO_RWX_PAGES) || defined(TARGET_IPHONE)
+    bool rc = virtmem::prepare_jit_block(ARM7_TCB, ICacheSize, (void**)&ICache, &rx_offset);
 #else
-	bool rc = virtmem::prepare_jit_block(ARM7_TCB, ICacheSize, (void**)&ICache);
+    bool rc = virtmem::prepare_jit_block(ARM7_TCB, ICacheSize, (void**)&ICache);
 #endif
 	verify(rc);
 

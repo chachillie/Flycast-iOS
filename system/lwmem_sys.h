@@ -36,7 +36,7 @@
 
 #include <stddef.h>
 #include <stdint.h>
-#include "lwmem/lwmem.h"
+#include "lwmem.h"
 
 #ifdef __cplusplus
 extern "C" {

@@ -1,22 +1,29 @@
-// Copyright 2022 DolphiniOS Project
+// Copyright 2025 Flycast Project
 // SPDX-License-Identifier: GPL-2.0-or-later
-// Adapted for Flycast
 
-#import <Foundation/Foundation.h>
+#pragma once
 
-NS_ASSUME_NONNULL_BEGIN
+#ifdef __APPLE__
+#include <TargetConditionals.h>
+#if TARGET_OS_IPHONE && !TARGET_OS_SIMULATOR
 
-@interface JitManager : NSObject
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-@property (readonly, assign) bool acquiredJit;
-@property (nonatomic, nullable) NSString* acquisitionError;
+// Returns true if device has TXM (iOS 26+ with TXM firmware)
+bool ios_device_has_txm(void);
 
-@property (readonly, assign) bool deviceHasTxm;
+// Returns true if process is being debugged
+bool ios_process_is_debugged(void);
 
-+ (JitManager*)shared;
+// Returns true if TXM is present AND debugger is attached (StikDebug)
+// This is the function to call to determine if TXM JIT mode should be used
+bool ios_can_use_txm_jit(void);
 
-- (void)recheckIfJitIsAcquired;
+#ifdef __cplusplus
+}
+#endif
 
-@end
-
-NS_ASSUME_NONNULL_END
+#endif // TARGET_OS_IPHONE && !TARGET_OS_SIMULATOR
+#endif // __APPLE__

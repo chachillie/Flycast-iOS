@@ -10,13 +10,13 @@
 // the RW pointer. However the fpcb table and other pointers during execution
 // (ie. exceptions) are RX pointers. These two macros convert between them by
 // sub/add the pointer offset. CodeCache will point to the RW pointer for simplicity.
-#ifdef FEAT_NO_RWX_PAGES
-	extern ptrdiff_t cc_rx_offset;
-	#define CC_RW2RX(ptr) (void*)(((uintptr_t)(ptr)) + cc_rx_offset)
-	#define CC_RX2RW(ptr) (void*)(((uintptr_t)(ptr)) - cc_rx_offset)
+#if defined(FEAT_NO_RWX_PAGES) || defined(TARGET_IPHONE)
+    extern ptrdiff_t cc_rx_offset;
+    #define CC_RW2RX(ptr) (void*)(((uintptr_t)(ptr)) + cc_rx_offset)
+    #define CC_RX2RW(ptr) (void*)(((uintptr_t)(ptr)) - cc_rx_offset)
 #else
-	#define CC_RW2RX(ptr) (ptr)
-	#define CC_RX2RW(ptr) (ptr)
+    #define CC_RW2RX(ptr) (ptr)
+    #define CC_RX2RW(ptr) (ptr)
 #endif
 
 //Called from ngen_FailedToFindBlock

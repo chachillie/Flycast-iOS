@@ -3153,14 +3153,7 @@ static void gui_display_settings()
 			gui_settings_advanced();
 			ImGui::EndTabItem();
 		}
-#if !defined(NDEBUG) || defined(DEBUGFAST) || FC_PROFILER
-		if (ImGui::BeginTabItem(ICON_FA_BUG " Debug"))
-		{
-			ImguiStyleVar _(ImGuiStyleVar_FramePadding, normal_padding);
-			gui_debug_tab();
-			ImGui::EndTabItem();
-		}
-#endif
+
 		if (ImGui::BeginTabItem(ICON_FA_CIRCLE_INFO " About"))
 		{
 			ImguiStyleVar _(ImGuiStyleVar_FramePadding, normal_padding);

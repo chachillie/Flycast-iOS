@@ -349,45 +349,54 @@ void Sh4Recompiler::Reset(bool hard)
 		bm_Reset();
 }
 
+// REPLACE the Init() function in driver.cpp starting around line 355:
+
 void Sh4Recompiler::Init()
 {
-	INFO_LOG(DYNAREC, "Sh4Recompiler::Init");
-	super::Init();
-	bm_Init();
-	
-	if (addrspace::virtmemEnabled())
-		verify(&mem_b[0] == ((u8*)getContext()->sq_buffer + sizeof(Sh4Context) + 0x0C000000));
+    INFO_LOG(DYNAREC, "Sh4Recompiler::Init");
+    super::Init();
+    bm_Init();
+    
+    if (addrspace::virtmemEnabled())
+        verify(&mem_b[0] == ((u8*)getContext()->sq_buffer + sizeof(Sh4Context) + 0x0C000000));
 
-	// Call the platform-specific magic to make the pages RWX
-	CodeCache = nullptr;
-#ifdef FEAT_NO_RWX_PAGES
-	bool rc = virtmem::prepare_jit_block(SH4_TCB, FULL_SIZE, (void**)&CodeCache, &cc_rx_offset);
+    CodeCache = nullptr;
+    cc_rx_offset = 0;
+    
+#if defined(FEAT_NO_RWX_PAGES) || defined(TARGET_IPHONE)
+    // Use dual-mapping mode (for FEAT_NO_RWX_PAGES or iOS TXM)
+    bool rc = virtmem::prepare_jit_block(SH4_TCB, FULL_SIZE, (void**)&CodeCache, &cc_rx_offset);
 #else
-	bool rc = virtmem::prepare_jit_block(SH4_TCB, FULL_SIZE, (void**)&CodeCache);
+    // Use single RWX mapping
+    bool rc = virtmem::prepare_jit_block(SH4_TCB, FULL_SIZE, (void**)&CodeCache);
 #endif
-	verify(rc);
-	// Ensure the pointer returned is non-null
-	verify(CodeCache != nullptr);
+    
+    verify(rc);
+    verify(CodeCache != nullptr);
 
-	TempCodeCache = CodeCache + CODE_SIZE;
-	sh4Dynarec->init(*getContext(), codeBuffer);
-	bm_ResetCache();
+    TempCodeCache = CodeCache + CODE_SIZE;
+    sh4Dynarec->init(*getContext(), codeBuffer);
+    bm_ResetCache();
+    
+    return true;
 }
+
+// REPLACE the Term() function in driver.cpp starting around line 375:
 
 void Sh4Recompiler::Term()
 {
-	INFO_LOG(DYNAREC, "Sh4Recompiler::Term");
-#ifdef FEAT_NO_RWX_PAGES
-	if (CodeCache != nullptr)
-		virtmem::release_jit_block(CodeCache, (u8 *)CodeCache + cc_rx_offset, FULL_SIZE);
-#else
-	if (CodeCache != nullptr && CodeCache != SH4_TCB)
-		virtmem::release_jit_block(CodeCache, FULL_SIZE);
+    INFO_LOG(DYNAREC, "Sh4Recompiler::Term");
+    
+#if defined(FEAT_NO_RWX_PAGES) || defined(TARGET_IPHONE)
+    if (cc_rx_offset != 0)
+        virtmem::release_jit_block(CodeCache, (u8 *)CodeCache + cc_rx_offset, FULL_SIZE);
+    else
 #endif
-	CodeCache = nullptr;
-	TempCodeCache = nullptr;
-	bm_Term();
-	super::Term();
+        virtmem::release_jit_block(CodeCache, FULL_SIZE);
+    
+    CodeCache = nullptr;
+    //sh4Dynarec->term();
+    super::Term();
 }
 
 Sh4Executor *Get_Sh4Recompiler()
