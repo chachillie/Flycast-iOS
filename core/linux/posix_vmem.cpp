@@ -284,11 +284,25 @@ static bool init_txm_jit_pool()
     
     g_txm_pool.initialized = true;
     
+    bool has_txm = ios_device_has_txm();
+    bool is_debugged = ios_process_is_debugged();
+    
+    INFO_LOG(VMEM, "=== iOS 26 JIT Detection ===");
+    INFO_LOG(VMEM, "Device has TXM: %s", has_txm ? "YES" : "NO");
+    INFO_LOG(VMEM, "Process debugged: %s", is_debugged ? "YES" : "NO");
+    
     if (!ios_can_use_txm_jit())
     {
+        if (has_txm && !is_debugged) {
+            INFO_LOG(VMEM, "TXM device WITHOUT debugger - using standard dual-mapping");
+        } else {
+            INFO_LOG(VMEM, "Non-TXM device - using standard dual-mapping");
+        }
         g_txm_pool.uses_txm = false;
         return false;
     }
+    
+    INFO_LOG(VMEM, "TXM device WITH debugger - initializing TXM pool");
     
     g_txm_pool.uses_txm = true;
     const size_t size = TXM_EXECUTABLE_REGION_SIZE;
@@ -303,6 +317,8 @@ static bool init_txm_jit_pool()
         g_txm_pool.uses_txm = false;
         return false;
     }
+    
+    INFO_LOG(VMEM, "Registering with TXM via brk #0x69...");
     
     __asm__ volatile (
         "mov x0, %0\n"
@@ -461,7 +477,6 @@ void release_jit_block(void *code_area, size_t size)
 bool prepare_jit_block(void *code_area, size_t size, void **code_area_rw, ptrdiff_t *rx_offset)
 {
 #ifdef TARGET_IPHONE
-    // Try TXM mode first
     init_txm_jit_pool();
     
     if (g_txm_pool.uses_txm)
@@ -479,18 +494,18 @@ bool prepare_jit_block(void *code_area, size_t size, void **code_area_rw, ptrdif
         uintptr_t aligned = (raw_addr + pagesize - 1) & ~(pagesize - 1);
         ((void**)aligned)[-1] = raw;
         
-        // For dual-mapping mode, return RW pointer and offset
         *code_area_rw = (void*)aligned;
-        *rx_offset = -g_txm_pool.rw_rx_diff; // Negative because RW > RX
+        *rx_offset = -g_txm_pool.rw_rx_diff;
         
         INFO_LOG(VMEM, "TXM dual-map: RW=%p rx_offset=%td size=%zu",
                  *code_area_rw, *rx_offset, size);
         
         return true;
     }
+    
+    INFO_LOG(VMEM, "iOS: Using standard dual-mapping (non-TXM)");
 #endif
 
-    // Original dual-mapping code for other platforms
     int fd = allocate_shared_filemem(size);
     if (fd < 0)
         return false;
