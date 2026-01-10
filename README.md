@@ -1,4 +1,15 @@
-# Flycast
+# Flycast for iOS
+
+## Build
+
+1. `git clone --recursive https://github.com/chachillie/flycast-ios.git`
+2. Open `flycast.xcodeproj` in Xcode
+3. Build and run
+
+iOS 26 TXM devices require [StikDebug](https://github.com/StephenDev0/StikDebug).
+
+
+
 
 [![Android CI](https://github.com/flyinghead/flycast/actions/workflows/android.yml/badge.svg)](https://github.com/flyinghead/flycast/actions/workflows/android.yml)
 [![C/C++ CI](https://github.com/flyinghead/flycast/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/flyinghead/flycast/actions/workflows/c-cpp.yml)
