@@ -290,14 +290,8 @@ static bool init_txm_jit_pool()
     INFO_LOG(VMEM, "=== iOS 26 JIT Detection ===");
     INFO_LOG(VMEM, "Device has TXM: %s", has_txm ? "YES" : "NO");
     INFO_LOG(VMEM, "Process debugged: %s", is_debugged ? "YES" : "NO");
-    
-    if (!ios_can_use_txm_jit())
-    {
-        if (has_txm && !is_debugged) {
-            INFO_LOG(VMEM, "TXM device WITHOUT debugger - using standard dual-mapping");
-        } else {
-            INFO_LOG(VMEM, "Non-TXM device - using standard dual-mapping");
-        }
+
+    if (!is_debugged) {
         g_txm_pool.uses_txm = false;
         return false;
     }
@@ -319,14 +313,16 @@ static bool init_txm_jit_pool()
     }
     
     INFO_LOG(VMEM, "Registering with TXM via brk #0x69...");
-    
-    __asm__ volatile (
-        "mov x0, %0\n"
-        "mov x1, %1\n"
-        "brk #0x69"
-        :: "r" (rx_ptr), "r" (size)
-        : "x0", "x1", "memory"
-    );
+
+    if (has_txm) {
+        __asm__ volatile (
+            "mov x0, %0\n"
+            "mov x1, %1\n"
+            "brk #0x69"
+            :: "r" (rx_ptr), "r" (size)
+            : "x0", "x1", "memory"
+        );
+    }
     
     vm_address_t rw_region = 0;
     vm_address_t target = reinterpret_cast<vm_address_t>(rx_ptr);
