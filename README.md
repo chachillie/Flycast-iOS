@@ -1,3 +1,26 @@
+### iOS
+
+# 1. Clone the repository
+git clone --recursive https://github.com/chachillie/Flycast-iOS.git
+cd Flycast-iOS
+
+# 2. Create build directory
+mkdir build-ios
+cd build-ios
+
+# 3. Run CMake            
+cmake .. -G Xcode -DCMAKE_SYSTEM_NAME=iOS
+
+
+# 4. Open in Xcode
+open flycast.xcodeproj
+
+
+
+
+
+
+
 # Flycast
 
 [![Android CI](https://github.com/flyinghead/flycast/actions/workflows/android.yml/badge.svg)](https://github.com/flyinghead/flycast/actions/workflows/android.yml)
@@ -38,9 +61,7 @@ Install Flycast from [**Google Play**](https://play.google.com/store/apps/detail
 
 `brew install --cask flycast`
 
-### iOS
 
-Due to persistent harassment from an iOS user, support for this platform has been dropped. 
 
 ### Xbox One/Series ![xbox logo](https://flyinghead.github.io/flycast-builds/xbox.png)
 
