@@ -247,6 +247,17 @@ elseif(WIN32)
 	endif()
 elseif(APPLE)
 	add_executable(${PROJECT_NAME} MACOSX_BUNDLE core/emulator.cpp)
+ if(IOS AND NOT LIBRETRO)
+        target_sources(${PROJECT_NAME} PRIVATE
+            ${CMAKE_CURRENT_SOURCE_DIR}/lwmem.c
+            ${CMAKE_CURRENT_SOURCE_DIR}/lwmem_sys_apple.c
+            ${CMAKE_CURRENT_SOURCE_DIR}/ios_jit_manager.m
+            ${CMAKE_CURRENT_SOURCE_DIR}/ios_jit_manager.h)
+        target_include_directories(${PROJECT_NAME} PRIVATE
+            ${CMAKE_CURRENT_SOURCE_DIR}/core/lwmem
+            ${CMAKE_CURRENT_SOURCE_DIR}/core/lwmem/src/include/system
+            ${CMAKE_CURRENT_SOURCE_DIR}/core/lwmem/src/include/lwmem)
+    endif()
 else()
 	add_executable(${PROJECT_NAME} core/emulator.cpp)
 endif()
@@ -254,6 +265,7 @@ endif()
 set_target_properties(${PROJECT_NAME} PROPERTIES
 		CMAKE_CXX_STANDARD 20
 		CMAKE_CXX_STANDARD_REQUIRED ON)
+
 
 if(WINDOWS_STORE)
 	set(USE_OPENGL OFF)

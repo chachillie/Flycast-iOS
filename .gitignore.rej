@@ -1,0 +1,4 @@
+diff a/.gitignore b/.gitignore	(rejected hunks)
+@@ -1 +1,2 @@
+ build/
++.DS_Store

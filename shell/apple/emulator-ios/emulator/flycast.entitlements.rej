@@ -1,0 +1,13 @@
+diff a/shell/apple/emulator-ios/emulator/flycast.entitlements b/shell/apple/emulator-ios/emulator/flycast.entitlements	(rejected hunks)
+@@ -6,5 +6,9 @@
+     <true/>
+     <key>get-task-allow</key>
+     <true/>
++    <key>com.apple.security.cs.allow-jit</key>
++    <true/>
++    <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
++    <true/>
+ </dict>
+-</plist>
++</plist>
+\ No newline at end of file

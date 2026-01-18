@@ -75,16 +75,37 @@ static DynaCode *linkBlockNextStub;
 static DynaCode *writeStoreQueue32;
 static DynaCode *writeStoreQueue64;
 
+#ifdef TARGET_IPHONE
+// TXM pool info - must match posix_vmem.cpp
+struct TXMPoolInfo {
+    u8* rx_region;
+    u8* rw_region;
+    ptrdiff_t rw_rx_diff;
+    bool initialized;
+    bool uses_txm;
+};
+
+namespace virtmem {
+    extern TXMPoolInfo g_txm_pool;
+}
+#endif
+
 static void jitWriteProtect(Sh4CodeBuffer &codeBuffer, bool enable)
 {
 #ifdef TARGET_IPHONE
-    if (enable)
-    	virtmem::region_set_exec(codeBuffer.getBase(), codeBuffer.getSize());
-    else
-    	virtmem::region_unlock(codeBuffer.getBase(), codeBuffer.getSize());
+    // On TXM devices, we don't need to toggle permissions
+    // Just check the flag - no need to redeclare the struct here
+    if (!virtmem::g_txm_pool.uses_txm)
+    {
+        if (enable)
+            virtmem::region_set_exec(codeBuffer.getBase(), codeBuffer.getSize());
+        else
+            virtmem::region_unlock(codeBuffer.getBase(), codeBuffer.getSize());
+    }
 #else
     JITWriteProtect(enable);
 #endif
+
 }
 
 static void interpreter_fallback(Sh4Context *ctx, u16 op, OpCallFP *oph, u32 pc)

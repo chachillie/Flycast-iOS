@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/CompilerIdSwift-master.dia",
+    "emit-module-dependencies" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/CompilerIdSwift-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/CompilerIdSwift-master-emit-module.dia",
+    "swift-dependencies" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/CompilerIdSwift-master.swiftdeps"
+  },
+  "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerId/main.swift" : {
+    "const-values" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/main.swiftconstvalues",
+    "dependencies" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/main.d",
+    "diagnostics" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/main.dia",
+    "index-unit-output-path" : "/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/main.o",
+    "swift-dependencies" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/main.swiftdeps",
+    "swiftmodule" : "/Users/chachillie/flycast-2.6/build-ios/CMakeFiles/3.30.5/CompilerIdSwift/CompilerIdSwift.build/Debug-iphoneos/CompilerIdSwift.build/Objects-normal/arm64/main~partial.swiftmodule"
+  }
+}

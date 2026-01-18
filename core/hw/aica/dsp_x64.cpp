@@ -31,7 +31,20 @@ namespace aica::dsp
 {
 
 constexpr size_t CodeBufferSize = 32_KB;
-DECLARE_CODE_CACHE(CodeBuffer, CodeBufferSize)
+#if defined(_WIN32)
+static u8 *CodeBuffer;
+#else
+alignas(4096) static u8 CodeBuffer[CodeBufferSize]
+	#if defined(__OpenBSD__)
+		__attribute__((section(".openbsd.mutable")));
+	#elif defined(__unix__)
+		__attribute__((section(".text")));
+	#elif defined(__APPLE__)
+		__attribute__((section("__TEXT,.text")));
+	#else
+		#error CodeBuffer code section unknown
+	#endif
+#endif
 static u8 *pCodeBuffer;
 static ptrdiff_t rx_offset;
 
@@ -409,10 +422,10 @@ void recompile()
 
 void recInit()
 {
-#ifdef FEAT_NO_RWX_PAGES
-	if (!virtmem::prepare_jit_block(CodeBuffer, CodeBufferSize, (void**)&pCodeBuffer, &rx_offset))
+#if defined(FEAT_NO_RWX_PAGES) || defined(TARGET_IPHONE)
+    bool rc = virtmem::prepare_jit_block(DynCode, CodeSize, (void**)&pCodeBuffer, &rx_offset);
 #else
-	if (!virtmem::prepare_jit_block(CodeBuffer, CodeBufferSize, (void**)&pCodeBuffer))
+    bool rc = virtmem::prepare_jit_block(DynCode, CodeSize, (void**)&pCodeBuffer);
 #endif
 		die("virtmem::prepare_jit_block failed in x64 dsp");
 }
