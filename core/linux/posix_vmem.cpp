@@ -289,10 +289,10 @@ static bool init_txm_jit_pool()
         g_txm_pool.uses_txm = false;
         return false;
     }
-    
+
     g_txm_pool.uses_txm = true;
     const size_t size = TXM_EXECUTABLE_REGION_SIZE;
-    
+
     INFO_LOG(VMEM, "Initializing TXM JIT pool (%zu MB)...", size / (1024 * 1024));
     
     u8* rx_ptr = static_cast<u8*>(mmap(nullptr, size, PROT_READ | PROT_EXEC,
@@ -304,13 +304,17 @@ static bool init_txm_jit_pool()
         return false;
     }
     
-    __asm__ volatile (
-        "mov x0, %0\n"
-        "mov x1, %1\n"
-        "brk #0x69"
-        :: "r" (rx_ptr), "r" (size)
-        : "x0", "x1", "memory"
-    );
+    bool has_txm = ios_device_has_txm();  // Add this line before the asm block
+
+    if (has_txm) {
+        __asm__ volatile (
+            "mov x0, %0\n"
+            "mov x1, %1\n"
+            "brk #0x69"
+            :: "r" (rx_ptr), "r" (size)
+            : "x0", "x1", "memory"
+        );
+    }
     
     vm_address_t rw_region = 0;
     vm_address_t target = reinterpret_cast<vm_address_t>(rx_ptr);
