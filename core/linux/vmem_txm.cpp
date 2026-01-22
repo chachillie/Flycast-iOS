@@ -1,11 +1,3 @@
-//
-//  TXMPool.swift
-//  flycast
-//
-//  Created by Chachillie on 1/20/26.
-//
-
-
 // Copyright 2025 Flycast Project
 // SPDX-License-Identifier: GPL-2.0-or-later
 

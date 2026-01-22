@@ -962,12 +962,17 @@ if(WIN32)
 			core/windows/comptr.h
 			core/windows/fault_handler.cpp
 			core/windows/unwind_info.cpp
+                        
 			core/windows/win_vmem.cpp)
 else()
 	target_sources(${PROJECT_NAME} PRIVATE
 			core/linux/common.cpp
 			core/linux/context.cpp
 			core/linux/posix_vmem.cpp
+                        core/linux/vmem_legacy.cpp
+                        core/linux/vmem_txm.cpp
+                        core/linux/vmem_no_txm.cpp
+                        core/linux/vmem_dispatch.cpp
 			core/linux/unwind_info.cpp)
 	if(NINTENDO_SWITCH)
 		add_subdirectory(shell/switch)
