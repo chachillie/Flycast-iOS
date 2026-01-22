@@ -5,6 +5,10 @@ artifact/
 .DS_Store
 shell/apple/emulator-ios/OpenMP/OpenMP.xcframework
 
+# iOS / Xcode derived data
+build-ios/
+DerivedData/
+
 # Visual Studio
 .vs/
 .vscode/
